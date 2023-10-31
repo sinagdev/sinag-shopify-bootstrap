@@ -6,18 +6,16 @@
         "7c7200c0-9e25-4d6f-8e80-68098f92561e": {
           "type": "slide",
           "settings": {
-            "img_mobile": "shopify:\/\/shop_images\/lifestyle-1-mobile.jpg",
             "img_mobile_height": 500,
             "img_mobile_opacity": 0.7,
-            "img_desktop": "shopify:\/\/shop_images\/lifestyle-1.jpg",
             "img_desktop_height": 800,
             "img_desktop_opacity": 0.7,
-            "title": "Welcome to KS BootShop Theme",
+            "title": "Sinag Bootstrap Theme",
             "title_size": "h2",
-            "description": "<p>Free Shopify Theme powered by Bootstrap v5 framework<\/p>",
+            "description": "<p>Shopify Theme powered by Bootstrap v5 framework<\/p>",
             "description_size": "fs-5",
             "btn_text": "Download Free",
-            "btn_url": "https:\/\/www.kondasoft.com\/products\/ks-bootshop",
+            "btn_url": "https:\/\/www.sinag.dev",
             "btn_color": "btn-primary",
             "btn_size": ""
           }
@@ -25,10 +23,8 @@
         "45eefe8d-75a6-4c0d-83c1-bf904392cb96": {
           "type": "slide",
           "settings": {
-            "img_mobile": "shopify:\/\/shop_images\/lifestyle-2-mobile.jpg",
             "img_mobile_height": 500,
             "img_mobile_opacity": 0.7,
-            "img_desktop": "shopify:\/\/shop_images\/lifestyle-2.jpg",
             "img_desktop_height": 800,
             "img_desktop_opacity": 0.7,
             "title": "Simple to Use, Easy to Customize",
@@ -77,6 +73,7 @@
         "product_img_orientation": "square",
         "product_img_border": "img-thumbnail",
         "product_title_size": "h6",
+        "mobile_scroll": true,
         "breakpoint_xs": 2,
         "breakpoint_sm": 2,
         "breakpoint_md": 2,
@@ -96,56 +93,56 @@
     "1651733459a1bea1c2": {
       "type": "featured-collections",
       "blocks": {
-        "8c529e86-7b51-4d75-baa3-1d4681b8c75c": {
+        "6717ec84-d53d-4250-b66e-ea64e1edeeb2": {
           "type": "collection",
           "settings": {
-            "collection": "men",
+            "collection": "helmets",
             "title": ""
           }
         },
-        "77c3798e-6857-46a0-92bc-df3c48109366": {
+        "4bf06c4e-c790-487c-8349-3f896aa549f0": {
           "type": "collection",
           "settings": {
-            "collection": "women",
+            "collection": "goggles",
             "title": ""
           }
         },
-        "ec048dd5-f669-4b0e-811b-cd904f95bde5": {
+        "c2230ccc-adb2-470d-80d8-6a31a357663f": {
           "type": "collection",
           "settings": {
-            "collection": "children",
+            "collection": "jackets",
             "title": ""
           }
         },
-        "ec7164c1-d2b0-4fd9-b81f-18204c938d9a": {
+        "b51abdfb-15e8-4b75-b777-07fb24055343": {
           "type": "collection",
           "settings": {
-            "collection": "babies",
+            "collection": "gloves",
             "title": ""
           }
         },
-        "9e860958-3e5a-44e1-ace8-49e74c8ea9ef": {
+        "93206b2f-90ef-4b5e-9463-d79695e572a3": {
           "type": "collection",
           "settings": {
-            "collection": "latest",
+            "collection": "skis",
             "title": ""
           }
         },
-        "e86d0893-60ca-4bbf-aa40-c1ea7de37bec": {
+        "337fd616-8e01-48e0-bb6d-2420982093c2": {
           "type": "collection",
           "settings": {
-            "collection": "sale",
+            "collection": "snowboards",
             "title": ""
           }
         }
       },
       "block_order": [
-        "8c529e86-7b51-4d75-baa3-1d4681b8c75c",
-        "77c3798e-6857-46a0-92bc-df3c48109366",
-        "ec048dd5-f669-4b0e-811b-cd904f95bde5",
-        "ec7164c1-d2b0-4fd9-b81f-18204c938d9a",
-        "9e860958-3e5a-44e1-ace8-49e74c8ea9ef",
-        "e86d0893-60ca-4bbf-aa40-c1ea7de37bec"
+        "6717ec84-d53d-4250-b66e-ea64e1edeeb2",
+        "4bf06c4e-c790-487c-8349-3f896aa549f0",
+        "c2230ccc-adb2-470d-80d8-6a31a357663f",
+        "b51abdfb-15e8-4b75-b777-07fb24055343",
+        "93206b2f-90ef-4b5e-9463-d79695e572a3",
+        "337fd616-8e01-48e0-bb6d-2420982093c2"
       ],
       "settings": {
         "bg_color": "bg-light text-dark",
@@ -180,7 +177,6 @@
             "shadow": "shadow-sm",
             "border_color": "",
             "border_width": 1,
-            "img": "shopify:\/\/shop_images\/collection-5.jpg",
             "img_orientation": "landscape",
             "img_crop": "center",
             "title": "Card with image",
@@ -200,7 +196,6 @@
             "shadow": "shadow",
             "border_color": "border-primary",
             "border_width": 1,
-            "img": "shopify:\/\/shop_images\/collection-3.jpg",
             "img_orientation": "landscape",
             "img_crop": "center",
             "title": "Card with image",
@@ -220,7 +215,6 @@
             "shadow": "shadow-sm",
             "border_color": "",
             "border_width": 1,
-            "img": "shopify:\/\/shop_images\/collection-2.jpg",
             "img_orientation": "landscape",
             "img_crop": "center",
             "title": "Card with image",
@@ -240,7 +234,6 @@
             "shadow": "shadow-sm",
             "border_color": "",
             "border_width": 1,
-            "img": "shopify:\/\/shop_images\/collection-4.jpg",
             "img_orientation": "landscape",
             "img_crop": "center",
             "title": "Card with image",
@@ -281,7 +274,6 @@
       "settings": {
         "bg_color": "bg-light text-body",
         "text_align": "text-start",
-        "image": "shopify:\/\/shop_images\/no-image.jpg",
         "img_orientation": "landscape-x2",
         "img_crop": "center",
         "img_border": "img-thumbnail",

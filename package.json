@@ -1,7 +1,9 @@
 {
     "scripts": {
         "watch": "npm-watch",
-        "bs-css": "sass --no-source-map src/bootstrap.scss:assets/vendor-bootstrap.css && postcss assets/vendor-bootstrap.css --replace --no-map --use autoprefixer && minify assets/vendor-bootstrap.css > assets/vendor-bootstrap.min.css && rm assets/vendor-bootstrap.css"
+        "serve": "shopify theme dev --open",
+        "bs-css": "sass --no-source-map src/bootstrap.scss:assets/vendor-bootstrap.css && postcss assets/vendor-bootstrap.css --replace --no-map --use autoprefixer && minify assets/vendor-bootstrap.css > assets/vendor-bootstrap.min.css && rm assets/vendor-bootstrap.css",
+        "dev": "npm run watch & npm run serve"
     },
     "watch": {
         "bs-css": {
