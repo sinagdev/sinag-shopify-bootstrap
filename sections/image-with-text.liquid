@@ -29,13 +29,27 @@
     <div class="container">
         <div class="row align-items-center {{ section.settings.img_align_desktop }}">
             <div class="col-lg-6 mb-6 mb-lg-0">
-                <img
-                    class="img-fluid {{ section.settings.img_border }}"
-                    src="{{ section.settings.image.src | image_url: width: img_width, height: img_height, crop: section.settings.img_crop }}"
-                    alt="{{ section.settings.image.alt | escape }}"
-                    width="{{ img_width }}"
-                    height="{{ img_height }}"
-                    loading="lazy">
+                
+                {% assign default_image_src = 'https://source.unsplash.com/black-textile-in-close-up-photography-gM8igOIP5MA' %}
+
+                {% if section.settings.image.src %}
+                    <img
+                        class="img-fluid {{ section.settings.img_border }}"
+                        src="{{ section.settings.image.src | image_url: width: img_width, height: img_height, crop: section.settings.img_crop }}"
+                        alt="{{ section.settings.image.alt | escape }}"
+                        width="{{ img_width }}"
+                        height="{{ img_height }}"
+                        loading="lazy">
+                {% else %}
+                    <img
+                        class="img-fluid {{ section.settings.img_border }}"
+                        src="{{ default_image_src }}"
+                        alt="Fallback Image"
+                        width="{{ img_width }}"
+                        height="{{ img_height }}"
+                        loading="lazy">
+                {% endif %}
+                
             </div>
             <div class="col-lg-6">
                 {% unless section.settings.subtitle == blank %}

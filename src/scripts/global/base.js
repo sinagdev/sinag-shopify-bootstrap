@@ -3,8 +3,6 @@
     https://www.kondasoft.com
 */
 
-console.log('KS BootShop - Free Shopify Theme by KondaSoft.com | Learn more at https://www.kondasoft.com')
-
 // Init Bootstrap tooltips
 document.querySelectorAll('[data-bs-toggle="tooltip"]')
     .forEach((el) => new bootstrap.Tooltip(el))

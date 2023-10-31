@@ -3,7 +3,8 @@
         "watch": "npm-watch",
         "serve": "shopify theme dev --open",
         "bs-css": "sass --no-source-map src/bootstrap.scss:assets/vendor-bootstrap.css && postcss assets/vendor-bootstrap.css --replace --no-map --use autoprefixer && minify assets/vendor-bootstrap.css > assets/vendor-bootstrap.min.css && rm assets/vendor-bootstrap.css",
-        "dev": "npm run watch & npm run serve"
+        "dev": "npm run webpack & npm run watch & npm run serve",
+        "webpack": "npx webpack --watch --mode development"
     },
     "watch": {
         "bs-css": {
@@ -29,5 +30,16 @@
         "postcss": "^8.4.20",
         "postcss-cli": "^10.1.0",
         "sass": "^1.57.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.16.5",
+        "@babel/preset-env": "^7.16.5",
+        "babel-loader": "^8.2.3",
+        "css-loader": "^6.5.1",
+        "mini-css-extract-plugin": "^2.4.5",
+        "postcss-loader": "^6.2.1",
+        "sass-loader": "^12.4.0",
+        "webpack": "^5.65.0",
+        "webpack-cli": "^4.9.1"
     }
 }
