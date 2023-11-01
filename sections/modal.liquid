@@ -86,15 +86,16 @@
           {% endif %}
 
 
-          {% if block.settings.modal_image != blank%}
-            <img
-              class="img-fluid modal-content__image"
-              src="{{ block.settings.modal_image.src | image_url: width: 600, height: 480 }}"
-              alt="{{ block.settings.modal_image.alt | escape }}"
-              width="600"
-              height="480"
-              loading="lazy">
-          {% endif %}
+
+          <img
+          class="img-fluid modal-content__image"
+          src="{{ block.settings.modal_content_image.src | image_url: width: 600, height: 480 }}"
+          alt="{{ block.settings.modal_content_image.alt | escape }}"
+          width="600"
+          height="480"
+          loading="lazy">
+        
+   
 
           {% if block.settings.modal_link_button or block.settings.modal_link_url or block.settings.modal_link_text %}
             <a class="btn btn-md mb-5{% if block.settings.modal_link_button == true %} btn{% endif %}" href="{{ block.settings.modal_link_url }}">
@@ -201,7 +202,7 @@
           },
           {
             "type": "image_picker",
-            "id": "modal_image",
+            "id": "modal_content_image",
             "label": "Modal Content Image"
           },
           {
