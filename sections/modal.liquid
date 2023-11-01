@@ -41,7 +41,7 @@
       {% elsif block.settings.trigger_link_image %}
         <img
           class="img-fluid"
-          src="{{ block.settings.trigger_link_image.src | image_url: width: img_width, height: img_height, crop: block.settings.img_crop }}"
+          src="{{ block.settings.trigger_link_image.src | image_url: width: img_width, height: img_height }}"
           alt="{{ block.settings.trigger_link_image.alt | escape }}"
           width="{{ img_width }}"
           height="{{ img_height }}"
@@ -141,14 +141,12 @@
           {
             "type": "text",
             "id": "trigger_button_title",
-            "label": "Modal Trigger Button",
-            "default": "Modal Button"
+            "label": "Modal Trigger Button"
           },
           {
             "type": "text",
             "id": "trigger_link_title",
-            "label": "Modal Trigger Link",
-            "default": "Modal Link"
+            "label": "Modal Trigger Link"
           },
           {
             "type": "image_picker",
