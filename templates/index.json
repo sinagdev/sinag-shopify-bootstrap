@@ -424,15 +424,18 @@
     "e88549cb-9b6f-4c57-85f8-69c752dd1756": {
       "type": "modal",
       "blocks": {
-        "template--16187564163222__e88549cb-9b6f-4c57-85f8-69c752dd1756-richtext-1": {
-          "type": "richtext",
+        "12392da7-dcd3-4069-af99-7f3d564a4ec0": {
+          "type": "item",
           "settings": {
-            "modal_body_content": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sociis dui egestas ornare eget platea vel eleifend, curae scelerisque natoque iaculis aptent sodales. Nam sapien duis platea consequat et habitasse, mus tortor penatibus rhoncus nunc, purus diam ridiculus luctus ultrices. Proin ad potenti venenatis integer penatibus conubia ultrices tortor, est quisque sagittis enim fusce nec euismod bibendum litora, semper quis justo iaculis vivamus elementum nascetur. Malesuada ligula cursus ornare ut conubia facilisi, blandit pellentesque facilisis nibh dictumst fames per, mauris suspendisse curae donec maecenas. Leo nisi hendrerit odio primis tempor ligula faucibus aliquam ridiculus, per nibh nullam quisque convallis pretium ornare nulla malesuada metus, purus eros laoreet quam tincidunt dapibus facilisis eget. Habitant phasellus gravida nisl porttitor maecenas taciti lacus neque, vulputate pulvinar class ullamcorper velit ac pellentesque est, imperdiet per dictum semper ultricies sem arcu.<\/p>"
+            "modal_title": "Modal Content Title",
+            "modal_body_content": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit nullam facilisis ad eros non litora quis sagittis, lacus risus porttitor fermentum fusce lectus nec dictumst hac consequat libero feugiat phasellus vel. Vestibulum facilisis nec netus magnis urna donec eleifend condimentum, leo imperdiet sem tortor turpis proin est praesent, odio commodo vehicula enim risus bibendum tincidunt. Tortor velit interdum vitae maecenas ut nisl orci vulputate proin litora, ultricies est eros nisi turpis malesuada integer facilisi posuere imperdiet, rutrum vestibulum sollicitudin aptent sodales dignissim torquent eu sed. Vitae vulputate erat congue sapien interdum rhoncus ullamcorper himenaeos, nisl class taciti euismod habitasse ac consequat gravida, rutrum eu id venenatis natoque ante nascetur. Congue dapibus euismod commodo curae velit vulputate fermentum, molestie dictum dui rhoncus nulla praesent class parturient, pulvinar dignissim erat enim non neque. Facilisi quisque mollis dictumst tortor parturient fringilla fermentum, at varius porta rhoncus per et hendrerit, diam velit egestas cras nibh purus. Tempus placerat ultricies erat tortor parturient magna dis ut venenatis commodo, tempor senectus pulvinar ad gravida condimentum hendrerit habitant neque vulputate, iaculis cursus lobortis proin malesuada mus nascetur taciti eleifend.<\/p>",
+            "modal_link_url": "shopify:\/\/pages\/about",
+            "modal_link_button": false
           }
         }
       },
       "block_order": [
-        "template--16187564163222__e88549cb-9b6f-4c57-85f8-69c752dd1756-richtext-1"
+        "12392da7-dcd3-4069-af99-7f3d564a4ec0"
       ],
       "settings": {
         "modal_trigger_type": "modal_trigger_button",
