@@ -110,94 +110,131 @@
 
 
 {% schema %}
-{
-  "name": "Modal",
-  "settings": [
-    {
-      "type": "header",
-      "content": "Modal Trigger"
-    },
-    {
-      "type": "select",
-      "id": "modal_trigger_type",
-      "label": "Modal Trigger type",
-      "info": "Choose between a Button or Link",
-      "default": "modal_trigger_button",
-      "options": [
-        {
-          "label": "Button",
-          "value": "modal_trigger_button"
-        },
-        {
-          "label": "Link",
-          "value": "modal_trigger_link"
-        }
-      ]
-    },
-    {
-      "type": "text",
-      "id": "trigger_button_title",
-      "label": "Modal Trigger Button",
-      "default": "Modal Button"
-    },
-    {
-      "type": "text",
-      "id": "trigger_link_title",
-      "label": "Modal Trigger Link",
-      "default": "Modal Link"
-    },
-    {
-      "type": "image_picker",
-      "id": "trigger_link_image",
-      "label": "Modal Trigger Image"
-    },
-    {
-      "type": "header",
-      "content": "Modal Content Header"
-    },
-    {
-      "type": "text",
-      "id": "modal_header_title",
-      "label": "Modal Header Title",
-      "default": "Modal Header Title"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "modal_content",
-      "name": "Modal Content",
-      "settings": [
-        {
-          "type": "text",
-          "id": "modal_title",
-          "label": "Modal Content Title",
-          "default": "Modal Content Title"
-        },
-        {
-          "type": "richtext",
-          "id": "modal_body_content",
-          "label": "Modal Body Content"
-        },
-        {
-          "type": "image_picker",
-          "id": "modal_image",
-          "label": "Modal Content Image"
-        },
-        {
-          "type": "url",
-          "id": "modal_link_url",
-          "label": "Modal Link URL"
-        },
-        {
-          "type": "checkbox",
-          "id": "modal_link_button",
-          "label": "Use Modal Link as a Button",
-          "info": "Check this if you want the provided URL to act as a button within the modal.",
-          "default": false
-        }
-      ]
-    }
-  ]
-
-}
+  {
+    "name": "Modal",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Modal Trigger"
+      },
+      {
+        "type": "select",
+        "id": "modal_trigger_type",
+        "label": "Modal Trigger type",
+        "info": "Choose between a Button or Link",
+        "default": "modal_trigger_button",
+        "options": [
+          {
+            "label": "Button",
+            "value": "modal_trigger_button"
+          },
+          {
+            "label": "Link",
+            "value": "modal_trigger_link"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "trigger_button_title",
+        "label": "Modal Trigger Button",
+        "default": "Modal Button"
+      },
+      {
+        "type": "text",
+        "id": "trigger_link_title",
+        "label": "Modal Trigger Link",
+        "default": "Modal Link"
+      },
+      {
+        "type": "image_picker",
+        "id": "trigger_link_image",
+        "label": "Modal Trigger Image"
+      },
+      {
+        "type": "header",
+        "content": "Modal Content Header"
+      },
+      {
+        "type": "text",
+        "id": "modal_header_title",
+        "label": "Modal Header Title",
+        "default": "Modal Header Title"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "name": "Modal Content Title",
+        "settings": [
+          {
+            "type": "text",
+            "id": "modal_title",
+            "label": "Modal Content Title",
+            "default": "Modal Content Title"
+          }
+        ]
+      },
+      {
+        "type": "richtext",
+        "name": "Modal Body Content",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "modal_body_content",
+            "label": "Modal Body Content"
+          }
+        ]
+      },
+      {
+        "type": "image_picker",
+        "name": "Modal Content Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "modal_image",
+            "label": "Modal Content Image"
+          }
+        ]
+      },
+      {
+        "type": "url",
+        "name": "Modal Link URL",
+        "settings": [
+          {
+            "type": "url",
+            "id": "modal_link_url",
+            "label": "Modal Link URL"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "name": "Modal Link as a Button",
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "modal_link_button",
+            "label": "Use Modal Link as a Button",
+            "info": "Check this if you want the provided URL to act as a button within the modal.",
+            "default": false
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Modal",
+        "category": "Modal Preset",
+        "blocks": [
+          {
+            "type": "text"
+          },
+          {
+            "type": "richtext"
+          }
+        ]
+      }
+    ]
+  }
 {% endschema %}
