@@ -427,7 +427,7 @@
         "e0a4f80b-eb89-44aa-a8eb-c5536790cbfe": {
           "type": "text",
           "settings": {
-            "modal_title": "Modal Content Title test"
+            "modal_title": "Modal Content Titles test"
           }
         },
         "a5f48c1b-1c2d-43a1-b707-8bf815abdd05": {
@@ -442,7 +442,7 @@
         "a5f48c1b-1c2d-43a1-b707-8bf815abdd05"
       ],
       "settings": {
-        "modal_trigger_type": "modal_trigger_link",
+        "modal_trigger_type": "modal_trigger_button",
         "trigger_button_title": "TEST",
         "trigger_link_title": "TEST LINK",
         "modal_header_title": "Modal Header TITLE"
