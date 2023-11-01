@@ -420,6 +420,33 @@
         "mt": 0,
         "mb": 0
       }
+    },
+    "7daf90ec-74ec-462f-a693-2297f4b1f1d1": {
+      "type": "modal",
+      "blocks": {
+        "e0a4f80b-eb89-44aa-a8eb-c5536790cbfe": {
+          "type": "text",
+          "settings": {
+            "modal_title": "Modal Content Title test"
+          }
+        },
+        "a5f48c1b-1c2d-43a1-b707-8bf815abdd05": {
+          "type": "richtext",
+          "settings": {
+            "modal_body_content": "<p>Lorem Ipsum<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "e0a4f80b-eb89-44aa-a8eb-c5536790cbfe",
+        "a5f48c1b-1c2d-43a1-b707-8bf815abdd05"
+      ],
+      "settings": {
+        "modal_trigger_type": "modal_trigger_button",
+        "trigger_button_title": "TEST",
+        "trigger_link_title": "Modal Link",
+        "modal_header_title": "Modal Header Title"
+      }
     }
   },
   "order": [
@@ -432,6 +459,7 @@
     "165175524396f2667c",
     "c74ebbe2-8be5-4594-80c9-25bb5250e03b",
     "16517348541d37c171",
-    "1ab6c22f-7e79-4e79-b4b5-e0939ba5593b"
+    "1ab6c22f-7e79-4e79-b4b5-e0939ba5593b",
+    "7daf90ec-74ec-462f-a693-2297f4b1f1d1"
   ]
 }
