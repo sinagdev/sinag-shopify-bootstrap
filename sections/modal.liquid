@@ -3,27 +3,23 @@
   assign pb = block.settings.pb | prepend: 'pb-'
   assign mt = block.settings.mt | prepend: 'mt-'
   assign mb = block.settings.mb | prepend: 'mb-'
-
-  case block.settings.img_orientation
-    when 'square'
-      assign img_width = 900
-      assign img_height = 900
-    when 'landscape'
-      assign img_width = 900
-      assign img_height = 720
-    when 'landscape-x2'
-      assign img_width = 900
-      assign img_height = 600
-    when 'potrait'
-      assign img_width = 720
-      assign img_height = 900
-    when 'potrait-x2'
-      assign img_width = 600
-      assign img_height = 900
-  endcase
 %}
 
 {% for block in section.blocks %}
+
+  {% liquid
+    case block.settings.trigger_link_image_orientation
+      when 'square'
+        assign img_width = 600
+        assign img_height = 600
+      when 'landscape'
+        assign img_width = 600
+        assign img_height = 480
+      when 'potrait'
+        assign img_width = 480
+        assign img_height = 600
+    endcase
+  %}
 
   <!-- Button trigger modal -->
   {% if block.settings.modal_trigger_type == 'modal_trigger_button' %}
@@ -35,7 +31,11 @@
       {{ block.settings.trigger_button_title }}
     </button>
   {% elsif block.settings.modal_trigger_type == 'modal_trigger_link' %}
-    <a data-bs-target="#modal-{{ section.id }}" title="{{ block.settings.title }}">
+    <a
+      href="#"
+      data-bs-toggle="modal"
+      data-bs-target="#modal-{{ section.id }}"
+      title="{{ block.settings.title }}">
       {% if block.settings.trigger_link_title %}
         {{ block.settings.trigger_link_title }}
       {% elsif block.settings.trigger_link_image %}
@@ -87,11 +87,11 @@
 
           {% if block.settings.modal_image %}
             <img
-              class="img-fluid {{ block.settings.img_border }}"
-              src="{{ block.settings.modal_image.src | image_url: width: img_width, height: img_height, crop: block.settings.img_crop }}"
+              class="img-fluid modal-content__image"
+              src="{{ block.settings.modal_image.src | image_url: width: 600, height: 480 }}"
               alt="{{ block.settings.modal_image.alt | escape }}"
-              width="{{ img_width }}"
-              height="{{ img_height }}"
+              width="600"
+              height="480"
               loading="lazy">
           {% endif %}
 
@@ -154,6 +154,26 @@
             "type": "image_picker",
             "id": "trigger_link_image",
             "label": "Modal Trigger Image"
+          },
+          {
+            "type": "select",
+            "id": "trigger_link_image_orientation",
+            "label": "Image orientation",
+            "default": "landscape",
+            "options": [
+              {
+                "value": "square",
+                "label": "Square"
+              },
+              {
+                "value": "landscape",
+                "label": "Landscape"
+              },
+              {
+                "value": "potrait",
+                "label": "Potrait"
+              }
+            ]
           },
           {
             "type": "header",
