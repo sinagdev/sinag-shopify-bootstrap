@@ -421,31 +421,24 @@
         "mb": 0
       }
     },
-    "7daf90ec-74ec-462f-a693-2297f4b1f1d1": {
+    "e88549cb-9b6f-4c57-85f8-69c752dd1756": {
       "type": "modal",
       "blocks": {
-        "e0a4f80b-eb89-44aa-a8eb-c5536790cbfe": {
-          "type": "text",
-          "settings": {
-            "modal_title": "Modal Content Titles test"
-          }
-        },
-        "a5f48c1b-1c2d-43a1-b707-8bf815abdd05": {
+        "template--16187564163222__e88549cb-9b6f-4c57-85f8-69c752dd1756-richtext-1": {
           "type": "richtext",
           "settings": {
-            "modal_body_content": "<p>Lorem Ipsum<\/p>"
+            "modal_body_content": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sociis dui egestas ornare eget platea vel eleifend, curae scelerisque natoque iaculis aptent sodales. Nam sapien duis platea consequat et habitasse, mus tortor penatibus rhoncus nunc, purus diam ridiculus luctus ultrices. Proin ad potenti venenatis integer penatibus conubia ultrices tortor, est quisque sagittis enim fusce nec euismod bibendum litora, semper quis justo iaculis vivamus elementum nascetur. Malesuada ligula cursus ornare ut conubia facilisi, blandit pellentesque facilisis nibh dictumst fames per, mauris suspendisse curae donec maecenas. Leo nisi hendrerit odio primis tempor ligula faucibus aliquam ridiculus, per nibh nullam quisque convallis pretium ornare nulla malesuada metus, purus eros laoreet quam tincidunt dapibus facilisis eget. Habitant phasellus gravida nisl porttitor maecenas taciti lacus neque, vulputate pulvinar class ullamcorper velit ac pellentesque est, imperdiet per dictum semper ultricies sem arcu.<\/p>"
           }
         }
       },
       "block_order": [
-        "e0a4f80b-eb89-44aa-a8eb-c5536790cbfe",
-        "a5f48c1b-1c2d-43a1-b707-8bf815abdd05"
+        "template--16187564163222__e88549cb-9b6f-4c57-85f8-69c752dd1756-richtext-1"
       ],
       "settings": {
         "modal_trigger_type": "modal_trigger_button",
-        "trigger_button_title": "TEST",
-        "trigger_link_title": "TEST LINK",
-        "modal_header_title": "Modal Header TITLE"
+        "trigger_button_title": "Modal Button",
+        "trigger_link_title": "Modal Link",
+        "modal_header_title": "Modal Header Title"
       }
     }
   },
@@ -460,6 +453,6 @@
     "c74ebbe2-8be5-4594-80c9-25bb5250e03b",
     "16517348541d37c171",
     "1ab6c22f-7e79-4e79-b4b5-e0939ba5593b",
-    "7daf90ec-74ec-462f-a693-2297f4b1f1d1"
+    "e88549cb-9b6f-4c57-85f8-69c752dd1756"
   ]
 }
