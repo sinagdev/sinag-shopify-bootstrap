@@ -1,10 +1,10 @@
 {% liquid
-  assign pt = section.settings.pt | prepend: 'pt-'
-  assign pb = section.settings.pb | prepend: 'pb-'
-  assign mt = section.settings.mt | prepend: 'mt-'
-  assign mb = section.settings.mb | prepend: 'mb-'
+  assign pt = block.settings.pt | prepend: 'pt-'
+  assign pb = block.settings.pb | prepend: 'pb-'
+  assign mt = block.settings.mt | prepend: 'mt-'
+  assign mb = block.settings.mb | prepend: 'mb-'
 
-  case section.settings.img_orientation
+  case block.settings.img_orientation
     when 'square'
       assign img_width = 900
       assign img_height = 900
@@ -41,8 +41,8 @@
       {% elsif block.settings.trigger_link_image %}
         <img
           class="img-fluid"
-          src="{{ section.settings.trigger_link_image.src | image_url: width: img_width, height: img_height, crop: section.settings.img_crop }}"
-          alt="{{ section.settings.trigger_link_image.alt | escape }}"
+          src="{{ block.settings.trigger_link_image.src | image_url: width: img_width, height: img_height, crop: block.settings.img_crop }}"
+          alt="{{ block.settings.trigger_link_image.alt | escape }}"
           width="{{ img_width }}"
           height="{{ img_height }}"
           loading="lazy">
@@ -87,9 +87,9 @@
 
           {% if block.settings.modal_image %}
             <img
-              class="img-fluid {{ section.settings.img_border }}"
-              src="{{ section.settings.modal_image.src | image_url: width: img_width, height: img_height, crop: section.settings.img_crop }}"
-              alt="{{ section.settings.modal_image.alt | escape }}"
+              class="img-fluid {{ block.settings.img_border }}"
+              src="{{ block.settings.modal_image.src | image_url: width: img_width, height: img_height, crop: block.settings.img_crop }}"
+              alt="{{ block.settings.modal_image.alt | escape }}"
               width="{{ img_width }}"
               height="{{ img_height }}"
               loading="lazy">
@@ -225,7 +225,15 @@
     "presets": [
       {
         "name": "Modal",
-        "category": "General"
+        "category": "General",
+        "blocks": [
+          {
+            "type": "text"
+          },
+          {
+            "type": "richtext"
+          }
+        ]
       }
     ]
   }
