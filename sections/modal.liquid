@@ -36,9 +36,10 @@
       data-bs-toggle="modal"
       data-bs-target="#modal-{{ section.id }}"
       title="{{ block.settings.title }}">
-      {% if block.settings.trigger_link_title %}
+      {% if block.settings.trigger_link_title != blank %}
         {{ block.settings.trigger_link_title }}
-      {% elsif block.settings.trigger_link_image %}
+      {% endif %}
+      {% if block.settings.trigger_link_image != blank %}
         <img
           class="img-fluid"
           src="{{ block.settings.trigger_link_image.src | image_url: width: img_width, height: img_height }}"
@@ -72,20 +73,20 @@
         </div>
         <div class="modal-body">
 
-          {% if block.settings.modal_title %}
+          {% if block.settings.modal_title != blank %}
             <h3 class="title mb-3 {{ block.settings.title_size }}">
               {{ block.settings.modal_title }}
             </h3>
           {% endif %}
 
-          {% if block.settings.modal_body_content %}
+          {% if block.settings.modal_body_content != blank %}
             <div class="description rte mb-6">
               {{ block.settings.modal_body_content }}
             </div>
           {% endif %}
 
 
-          {% if block.settings.modal_image %}
+          {% if block.settings.modal_image != blank%}
             <img
               class="img-fluid modal-content__image"
               src="{{ block.settings.modal_image.src | image_url: width: 600, height: 480 }}"
