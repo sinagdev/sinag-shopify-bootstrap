@@ -22,7 +22,7 @@
   %}
 
   <!-- Button trigger modal -->
-  {% if block.settings.modal_trigger_type == 'modal_trigger_button' %}
+  {% if block.settings.modal_trigger_type == 'modal_trigger_button' and block.settings.trigger_button_title != blank%}
     <button
       type="button"
       class="btn btn-primary"
@@ -168,7 +168,8 @@
           {
             "type": "text",
             "id": "trigger_button_title",
-            "label": "Modal Trigger Button"
+            "label": "Modal Trigger Button",
+            "default": "Modal Button"
           },
           {
             "type": "text",
