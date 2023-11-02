@@ -86,13 +86,8 @@
           {% endif %}
 
 
-          <img
-            class="img-fluid modal-content__image"
-            src="{{ block.settings.modal_content_image | image_url: width: 600, height: 480 }}"
-            alt="{{ block.settings.modal_content_image.alt | escape }}"
-            width="600"
-            height="480"
-            loading="lazy">
+            {{ block.settings.modal_content_image | image_url: width: 600 | image_tag }}
+
 
 
           {% if block.settings.modal_link_button or block.settings.modal_link_url or block.settings.modal_link_text %}
