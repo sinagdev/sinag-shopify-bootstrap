@@ -478,7 +478,7 @@
             "modal_header_title": "Modal Header Title",
             "modal_title": "Modal Content Title",
             "modal_body_content": "",
-            "modal_content_image": "shopify:\/\/shop_images\/10539101307_1_1908x2100_300_RGB.jpg",
+            "modal_content_image": "shopify:\/\/shop_images\/10231100205_1_1315x1800_300_CMYK.jpg",
             "modal_link_url": "",
             "modal_link_button": false
           }
@@ -491,6 +491,7 @@
         "8e71a602-4ba4-4272-ab3b-1a663ff99da0"
       ],
       "settings": {
+        "modal_size": "modal-dialog modal-xl"
       }
     }
   },
