@@ -39,7 +39,7 @@
       {% if block.settings.trigger_link_title != blank %}
         {{ block.settings.trigger_link_title }}
       {% endif %}
-      {% if block.settings.trigger_link_image != blank %}
+      {% if block.settings.trigger_link_image.src != blank %}
         <img
           class="img-fluid"
           src="{{ block.settings.trigger_link_image.src | image_url: width: img_width, height: img_height }}"
@@ -85,10 +85,15 @@
             </div>
           {% endif %}
 
-
-            {{ block.settings.modal_content_image | image_url: width: 600 | image_tag }}
-
-
+          {% if block.settings.modal_content_image.src != blank %}
+            <img
+              class="img-fluid modal-content__image mx-auto"
+              src="{{ block.settings.modal_content_image.src | image_url: width: 600, height: 480 }}"
+              alt="{{ block.settings.modal_content_image.alt | escape }}"
+              width="600"
+              height="480"
+              loading="lazy">
+          {% endif %}
 
           {% if block.settings.modal_link_button or block.settings.modal_link_url or block.settings.modal_link_text %}
             <a class="btn btn-md mb-5{% if block.settings.modal_link_button == true %} btn{% endif %}" href="{{ block.settings.modal_link_url }}">
