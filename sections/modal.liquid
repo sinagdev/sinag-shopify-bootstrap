@@ -59,7 +59,7 @@
     tabindex="-1"
     aria-labelledby="modal-{{ section.id }}"
     aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="{{section.settings.modal_size}} modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
           {% if block.settings.modal_header_title != blank %}
@@ -86,16 +86,14 @@
           {% endif %}
 
 
-
           <img
-          class="img-fluid modal-content__image"
-          src="{{ block.settings.modal_content_image.src | image_url: width: 600, height: 480 }}"
-          alt="{{ block.settings.modal_content_image.alt | escape }}"
-          width="600"
-          height="480"
-          loading="lazy">
-        
-   
+            class="img-fluid modal-content__image"
+            src="{{ block.settings.modal_content_image | image_url: width: 600, height: 480 }}"
+            alt="{{ block.settings.modal_content_image.alt | escape }}"
+            width="600"
+            height="480"
+            loading="lazy">
+
 
           {% if block.settings.modal_link_button or block.settings.modal_link_url or block.settings.modal_link_text %}
             <a class="btn btn-md mb-5{% if block.settings.modal_link_button == true %} btn{% endif %}" href="{{ block.settings.modal_link_url }}">
@@ -114,6 +112,33 @@
 {% schema %}
   {
     "name": "Modal",
+    "settings": [
+      {
+        "type": "select",
+        "id": "modal_size",
+        "label": "Modal Size",
+        "info": "Choose a Modal Size [Default is Medium]",
+        "default": "modal-dialog modal-xl",
+        "options": [
+          {
+            "label": "Small",
+            "value": "modal-dialog modal-sm"
+          },
+          {
+            "label": "Medium",
+            "value": "modal-dialog"
+          },
+          {
+            "label": "Large",
+            "value": "modal-dialog modal-lg"
+          },
+          {
+            "label": "Extra-Large",
+            "value": "modal-dialog modal-xl"
+          }
+        ]
+      }
+    ],
     "blocks": [
       {
         "type": "item",
