@@ -420,33 +420,6 @@
         "mt": 0,
         "mb": 0
       }
-    },
-    "63a01ae1-c857-49d6-a733-145382b5f293": {
-      "type": "modal",
-      "blocks": {
-        "template--16187564163222__63a01ae1-c857-49d6-a733-145382b5f293-item-1": {
-          "type": "item",
-          "settings": {
-            "modal_trigger_type": "modal_trigger_link",
-            "trigger_button_title": "",
-            "trigger_link_title": "",
-            "trigger_link_image": "shopify:\/\/shop_images\/10539101001_1_1693x1800_300_RGB.jpg",
-            "trigger_link_image_orientation": "square",
-            "modal_header_title": "Modal Header Title",
-            "modal_title": "Modal Content Title",
-            "modal_body_content": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit urna, purus natoque nisl cursus turpis fusce tristique. Pharetra primis nascetur felis id penatibus, nisi orci nibh neque aliquam, ultricies euismod mus ac. Purus pellentesque platea class eros ligula vitae litora pretium, dictum curabitur lobortis feugiat habitasse aptent tincidunt interdum justo, montes accumsan ridiculus himenaeos parturient pharetra arcu. Auctor sociosqu faucibus platea fringilla placerat tempus, potenti scelerisque erat blandit varius aliquam, dictumst tristique rhoncus inceptos donec. Hac tempor pellentesque primis eleifend aliquam vel ut, morbi justo augue dignissim fames cursus felis, cum molestie egestas suscipit massa suspendisse. Cubilia cursus nascetur parturient metus fames ligula rhoncus curae ridiculus sagittis aliquam, pharetra fringilla ultrices in ornare hac netus litora scelerisque quam, iaculis volutpat dapibus conubia diam feugiat habitant class convallis lacus. Mollis ultricies quis euismod porta id eget phasellus ad, placerat ullamcorper proin sollicitudin turpis fringilla fusce, vitae pharetra commodo semper lacus purus cubilia. Varius porttitor bibendum quisque magna integer tempus, malesuada ut suspendisse interdum nibh habitant curabitur, sapien ante imperdiet turpis vulputate.<\/p>",
-            "modal_content_image": "shopify:\/\/shop_images\/10231100702_1_1272x1800_300_RGB.jpg",
-            "modal_link_url": "",
-            "modal_link_button": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16187564163222__63a01ae1-c857-49d6-a733-145382b5f293-item-1"
-      ],
-      "settings": {
-        "modal_size": "modal-dialog modal-xl"
-      }
     }
   },
   "order": [
@@ -459,7 +432,6 @@
     "165175524396f2667c",
     "c74ebbe2-8be5-4594-80c9-25bb5250e03b",
     "16517348541d37c171",
-    "1ab6c22f-7e79-4e79-b4b5-e0939ba5593b",
-    "63a01ae1-c857-49d6-a733-145382b5f293"
+    "1ab6c22f-7e79-4e79-b4b5-e0939ba5593b"
   ]
 }
