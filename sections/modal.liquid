@@ -10,8 +10,8 @@
   {% liquid
     case block.settings.trigger_link_image_orientation
       when 'square'
-        assign img_width = 600
-        assign img_height = 600
+        assign img_width = 300
+        assign img_height = 300
       when 'landscape'
         assign img_width = 600
         assign img_height = 480
@@ -22,35 +22,63 @@
   %}
 
   <!-- Button trigger modal -->
-  {% if block.settings.modal_trigger_type == 'modal_trigger_button' and block.settings.trigger_button_title != blank %}
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#modal-{{ section.id }}">
-      {{ block.settings.trigger_button_title }}
-    </button>
-  {% elsif block.settings.modal_trigger_type == 'modal_trigger_link' %}
-    <a
-      href="#"
-      data-bs-toggle="modal"
-      data-bs-target="#modal-{{ section.id }}"
-      title="{{ block.settings.title }}">
-      {% if block.settings.trigger_link_title != blank %}
-        {{ block.settings.trigger_link_title }}
-      {% endif %}
-      {% if block.settings.trigger_link_image.src != blank %}
-        <img
-          class="img-fluid"
-          src="{{ block.settings.trigger_link_image.src | image_url: width: img_width, height: img_height }}"
-          alt="{{ block.settings.trigger_link_image.alt | escape }}"
-          width="{{ img_width }}"
-          height="{{ img_height }}"
-          loading="lazy">
-      {% endif %}
-    </a>
-  {% endif %}
+  <div class="col p-3 p-lg-4">
+    {% if block.settings.modal_trigger_type == 'modal_trigger_button' and block.settings.trigger_button_title != blank %}
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#modal-{{ section.id }}">
+        {{ block.settings.trigger_button_title }}
+      </button>
+    {% elsif block.settings.modal_trigger_type == 'modal_trigger_link' %}
+      <a
+        href="#"
+        data-bs-toggle="modal"
+        data-bs-target="#modal-{{ section.id }}"
+        title="{{ block.settings.title }}">
+        {% if block.settings.trigger_link_title != blank %}
+          {{ block.settings.trigger_link_title }}
+        {% endif %}
+        {% if block.settings.trigger_link_image.src != blank %}
+          <img
+            class="img-fluid"
+            src="{{ block.settings.trigger_link_image.src | image_url: width: img_width, height: img_height }}"
+            alt="{{ block.settings.trigger_link_image.alt | escape }}"
+            width="{{ img_width }}"
+            height="{{ img_height }}"
+            loading="lazy">
+        {% elsif block.settings.trigger_link_card == true %}
 
+          <div class="card h-100">
+            {% if block.settings.trigger_link_image.src != blank %}
+              <img
+                class="img-fluid card-img-top"
+                src="{{ block.settings.trigger_link_image.src | image_url: width: img_width, height: img_height, crop: block.settings.img_crop }}"
+                alt="{{ block.settings.trigger_link_image.alt | escape }}"
+                width="{{ img_width }}"
+                height="{{ img_height }}"
+                loading="lazy">
+            {% endif %}
+
+            <div class="card-body">
+              {% if block.settings.trigger_link_title != blank %}
+                <h3 class="title mb-4">
+                  {{ block.settings.trigger_link_title }}
+                </h3>
+              {% endif %}
+              {% if block.settings.trigger_link_content != blank %}
+                <div class="description rte mt-n3 mb-0">
+                  {{ block.settings.trigger_link_content }}
+                </div>
+              {% endif %}
+            </div>
+          </div>
+
+        {% endif %}
+      </a>
+    {% endif %}
+  </div>
 
   <!-- Modal -->
   <div
@@ -86,9 +114,9 @@
           {% endif %}
 
           {% if block.settings.modal_content_image.src != blank %}
-            <div class="modal-content__image">
+            <div class="modal-content__image text-center">
               <img
-                class="img-fluid mx-auto"
+                class="img-fluid"
                 src="{{ block.settings.modal_content_image.src | image_url: width: 600, height: 480 }}"
                 alt="{{ block.settings.modal_content_image.alt | escape }}"
                 width="600"
@@ -98,9 +126,11 @@
           {% endif %}
 
           {% if block.settings.modal_link_url and block.settings.modal_link_text %}
-            <a class="modal-content__link my-3{% if block.settings.modal_link_button == true %} btn btn-primary{% endif %}" href="{{ block.settings.modal_link_url }}">
-              {{ block.settings.modal_link_text }}
-            </a>
+            <div class="modal-footer">
+              <a class="modal-content__link my-3{% if block.settings.modal_link_button == true %} btn btn-primary{% endif %}" href="{{ block.settings.modal_link_url }}">
+                {{ block.settings.modal_link_text }}
+              </a>
+            </div>
           {% endif %}
 
         </div>
@@ -168,10 +198,18 @@
             ]
           },
           {
+            "type": "header",
+            "content": "Modal Trigger Button"
+          },
+          {
             "type": "text",
             "id": "trigger_button_title",
             "label": "Modal Trigger Button",
             "default": "Modal Button"
+          },
+          {
+            "type": "header",
+            "content": "Modal Trigger Link"
           },
           {
             "type": "text",
@@ -202,6 +240,18 @@
                 "label": "Potrait"
               }
             ]
+          },
+          {
+            "type": "checkbox",
+            "id": "trigger_link_card",
+            "label": "Modal Trigger as a Card",
+            "info": "Use Card as Modal trigger",
+            "default": false
+          },
+          {
+            "type": "richtext",
+            "id": "trigger_link_content",
+            "label": "Trigger Link Card Content"
           },
           {
             "type": "header",
