@@ -565,6 +565,13 @@ hr, .hr {
 }
 
 /*
+    Modal 
+*/
+.modal-backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/*
     © 2022 KondaSoft.com
     https://www.kondasoft.com
 */
