@@ -10,6 +10,9 @@
 
   {% liquid
     case block.settings.trigger_link_image_orientation
+      when 'thumbnail'
+        assign img_width = 50
+        assign img_height = 50
       when 'square'
         assign img_width = 300
         assign img_height = 300
@@ -29,14 +32,14 @@
       type="button"
       class="btn btn-primary"
       data-bs-toggle="modal"
-      data-bs-target="#modal-{{ section.id }}">
+      data-bs-target="#modal-{{ section.id }}-{{ forloop.index }}">
       {{ block.settings.trigger_button_title }}
     </button>
   {% elsif block.settings.modal_trigger_type == 'modal_trigger_link' %}
     <a
       href="#"
       data-bs-toggle="modal"
-      data-bs-target="#modal-{{ section.id }}"
+      data-bs-target="#modal-{{ section.id }}-{{ forloop.index }}"
       title="{{ block.settings.title }}">
       {% if block.settings.trigger_link_title != blank %}
         {{ block.settings.trigger_link_title }}
@@ -57,9 +60,9 @@
   <!-- Modal -->
   <div
     class="modal fade"
-    id="modal-{{ section.id }}"
+    id="modal-{{ section.id }}-{{ forloop.index }}"
     tabindex="-1"
-    aria-labelledby="modal-{{ section.id }}"
+    aria-labelledby="modal-{{ section.id }}-{{ forloop.index }}"
     aria-hidden="true">
     <div class="{{section.settings.modal_size}} modal-dialog-centered">
       <div class="modal-content">
@@ -199,8 +202,12 @@
             "type": "select",
             "id": "trigger_link_image_orientation",
             "label": "Image orientation",
-            "default": "landscape",
+            "default": "thumbnail",
             "options": [
+              {
+                "value": "thumbnail",
+                "label": "Thumbnail"
+              },
               {
                 "value": "square",
                 "label": "Square"
