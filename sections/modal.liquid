@@ -98,7 +98,7 @@
           {% endif %}
 
           {% if block.settings.modal_link_url and block.settings.modal_link_text %}
-            <a class="btn btn-md mb-5{% if block.settings.modal_link_button == true %} btn{% endif %}" href="{{ block.settings.modal_link_url }}">
+            <a class="modal-content__link my-3{% if block.settings.modal_link_button == true %} btn btn-primary{% endif %}" href="{{ block.settings.modal_link_url }}">
               {{ block.settings.modal_link_text }}
             </a>
           {% endif %}
