@@ -420,79 +420,6 @@
         "mt": 0,
         "mb": 0
       }
-    },
-    "2123a157-4633-48cb-beed-0cfffff1681d": {
-      "type": "modal",
-      "blocks": {
-        "template--16187564163222__2123a157-4633-48cb-beed-0cfffff1681d-item-1": {
-          "type": "item",
-          "settings": {
-            "modal_trigger_type": "modal_trigger_button",
-            "trigger_button_title": "Modal Button",
-            "trigger_link_title": "Modal Link",
-            "trigger_link_image_orientation": "landscape",
-            "modal_header_title": "Modal with Button Trigger",
-            "modal_title": "Modal Content Title",
-            "modal_body_content": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit condimentum dictum, integer cursus molestie urna dui tempus habitasse magna accumsan, suscipit lectus cum suspendisse luctus eros phasellus non. Id sapien tincidunt sollicitudin tortor porta, ornare ligula laoreet risus enim imperdiet, tellus potenti ridiculus litora. Parturient proin sed convallis porta cras at turpis phasellus penatibus, maecenas suscipit tristique primis posuere aenean sem cubilia aliquam felis, dictum velit gravida commodo vel quisque dictumst senectus. Diam sodales posuere bibendum class parturient integer egestas donec dapibus, condimentum pharetra aenean vitae leo sociosqu torquent faucibus pretium porta, non cras cursus lacus nostra iaculis imperdiet habitant. Justo in sociis dis velit tempor cursus nunc aliquam, tempus ligula nec mauris vulputate felis congue magnis, bibendum venenatis ultricies sapien penatibus mi id. Orci porta proin donec habitasse primis, erat suspendisse integer ad mi mattis, quam gravida eleifend varius.<\/p>",
-            "modal_link_url": "",
-            "modal_link_button": false
-          }
-        },
-        "c9c3373f-fe18-4049-aaaf-6d43d0052063": {
-          "type": "item",
-          "settings": {
-            "modal_trigger_type": "modal_trigger_link",
-            "trigger_button_title": "Modal Button",
-            "trigger_link_title": "Modal Link",
-            "trigger_link_image_orientation": "landscape",
-            "modal_header_title": "Modal Link Text",
-            "modal_title": "Modal Content Title",
-            "modal_body_content": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit condimentum dictum, integer cursus molestie urna dui tempus habitasse magna accumsan, suscipit lectus cum suspendisse luctus eros phasellus non. Id sapien tincidunt sollicitudin tortor porta, ornare ligula laoreet risus enim imperdiet, tellus potenti ridiculus litora. Parturient proin sed convallis porta cras at turpis phasellus penatibus, maecenas suscipit tristique primis posuere aenean sem cubilia aliquam felis, dictum velit gravida commodo vel quisque dictumst senectus. Diam sodales posuere bibendum class parturient integer egestas donec dapibus, condimentum pharetra aenean vitae leo sociosqu torquent faucibus pretium porta, non cras cursus lacus nostra iaculis imperdiet habitant. Justo in sociis dis velit tempor cursus nunc aliquam, tempus ligula nec mauris vulputate felis congue magnis, bibendum venenatis ultricies sapien penatibus mi id. Orci porta proin donec habitasse primis, erat suspendisse integer ad mi mattis, quam gravida eleifend varius.<\/p>",
-            "modal_link_url": "shopify:\/\/pages\/about",
-            "modal_link_button": true
-          }
-        },
-        "f60b94cb-4b9a-44cf-853c-9e6c34ddb166": {
-          "type": "item",
-          "settings": {
-            "modal_trigger_type": "modal_trigger_link",
-            "trigger_button_title": "",
-            "trigger_link_title": "",
-            "trigger_link_image": "shopify:\/\/shop_images\/10539101001_1_1693x1800_300_RGB.jpg",
-            "trigger_link_image_orientation": "square",
-            "modal_header_title": "Modal Link Image",
-            "modal_title": "Modal Content Title",
-            "modal_body_content": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit condimentum dictum, integer cursus molestie urna dui tempus habitasse magna accumsan, suscipit lectus cum suspendisse luctus eros phasellus non. Id sapien tincidunt sollicitudin tortor porta, ornare ligula laoreet risus enim imperdiet, tellus potenti ridiculus litora. Parturient proin sed convallis porta cras at turpis phasellus penatibus, maecenas suscipit tristique primis posuere aenean sem cubilia aliquam felis, dictum velit gravida commodo vel quisque dictumst senectus. Diam sodales posuere bibendum class parturient integer egestas donec dapibus, condimentum pharetra aenean vitae leo sociosqu torquent faucibus pretium porta, non cras cursus lacus nostra iaculis imperdiet habitant. Justo in sociis dis velit tempor cursus nunc aliquam, tempus ligula nec mauris vulputate felis congue magnis, bibendum venenatis ultricies sapien penatibus mi id. Orci porta proin donec habitasse primis, erat suspendisse integer ad mi mattis, quam gravida eleifend varius.<\/p>",
-            "modal_content_image": "shopify:\/\/shop_images\/10539101307_1_1908x2100_300_RGB.jpg",
-            "modal_link_url": "shopify:\/\/pages\/faq",
-            "modal_link_button": true
-          }
-        },
-        "8e71a602-4ba4-4272-ab3b-1a663ff99da0": {
-          "type": "item",
-          "settings": {
-            "modal_trigger_type": "modal_trigger_link",
-            "trigger_button_title": "",
-            "trigger_link_title": "jnjnjnjnj",
-            "trigger_link_image_orientation": "landscape",
-            "modal_header_title": "Modal Header Title",
-            "modal_title": "Modal Content Title",
-            "modal_body_content": "",
-            "modal_content_image": "shopify:\/\/shop_images\/10231100205_1_1315x1800_300_CMYK.jpg",
-            "modal_link_url": "",
-            "modal_link_button": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16187564163222__2123a157-4633-48cb-beed-0cfffff1681d-item-1",
-        "c9c3373f-fe18-4049-aaaf-6d43d0052063",
-        "f60b94cb-4b9a-44cf-853c-9e6c34ddb166",
-        "8e71a602-4ba4-4272-ab3b-1a663ff99da0"
-      ],
-      "settings": {
-        "modal_size": "modal-dialog modal-xl"
-      }
     }
   },
   "order": [
@@ -505,7 +432,6 @@
     "165175524396f2667c",
     "c74ebbe2-8be5-4594-80c9-25bb5250e03b",
     "16517348541d37c171",
-    "1ab6c22f-7e79-4e79-b4b5-e0939ba5593b",
-    "2123a157-4633-48cb-beed-0cfffff1681d"
+    "1ab6c22f-7e79-4e79-b4b5-e0939ba5593b"
   ]
 }
