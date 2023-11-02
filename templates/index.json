@@ -420,83 +420,6 @@
         "mt": 0,
         "mb": 0
       }
-    },
-    "643177c8-6aa7-4b27-95d9-b5b7c25e467a": {
-      "type": "modal",
-      "blocks": {
-        "template--16187564163222__643177c8-6aa7-4b27-95d9-b5b7c25e467a-item-1": {
-          "type": "item",
-          "settings": {
-            "modal_trigger_type": "modal_trigger_button",
-            "trigger_button_title": "Modal Button",
-            "trigger_link_title": "",
-            "trigger_link_image_orientation": "landscape",
-            "modal_header_title": "Modal Header Title",
-            "modal_title": "Modal Content Title",
-            "modal_body_content": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat, orci auctor condimentum vel per donec faucibus bibendum, praesent odio curae taciti ullamcorper torquent magnis. Cursus ligula magnis dictumst cum dis, quis sodales nascetur arcu habitasse fames, leo iaculis ridiculus molestie. Iaculis curae nisl accumsan integer ac justo magnis ut, maecenas eu nibh dictumst viverra dapibus cursus. Mollis lacus dis ac montes facilisi duis tellus fermentum euismod aliquet, curabitur nam urna ornare maecenas habitant ad interdum tempor mus tortor, ultrices dictum odio ullamcorper venenatis enim dictumst litora mauris. Nisi nulla condimentum maecenas viverra lobortis senectus fames, luctus placerat at pharetra justo cras suscipit blandit, dui sodales sem est class posuere. Cursus cras lacinia lobortis placerat lacus proin nostra aliquam, varius sapien ante viverra torquent fringilla convallis vitae platea, enim elementum pellentesque dictumst inceptos mauris purus. Ultrices dictum sagittis nascetur pharetra inceptos ullamcorper arcu augue id sapien tincidunt, auctor facilisis nullam scelerisque placerat nulla egestas risus tempor varius erat mauris, nisi lacinia suscipit cursus per aliquet maecenas proin justo eget. Ad tempus nunc habitasse pharetra potenti nec sodales dis, lacinia nisi dignissim interdum arcu volutpat netus euismod, erat tellus in imperdiet orci vitae ornare. Ullamcorper phasellus hendrerit montes cursus convallis commodo maecenas facilisis blandit, enim euismod sollicitudin molestie elementum aptent morbi netus sociosqu, semper condimentum quis mi rhoncus accumsan primis sem.<\/p>",
-            "modal_content_image": "shopify:\/\/shop_images\/10231100702_1_1272x1800_300_RGB.jpg",
-            "modal_link_text": "Modal Link",
-            "modal_link_url": "",
-            "modal_link_button": false
-          }
-        },
-        "861dfc12-81dd-4aa7-9375-391d6d87c451": {
-          "type": "item",
-          "settings": {
-            "modal_trigger_type": "modal_trigger_link",
-            "trigger_button_title": "Modal Button",
-            "trigger_link_title": "",
-            "trigger_link_image": "shopify:\/\/shop_images\/7624O1JB_Jester_16_110_mm__49535.1405420844.1280.1280.jpg",
-            "trigger_link_image_orientation": "landscape",
-            "modal_header_title": "Modal Header Title",
-            "modal_title": "Modal Content Title",
-            "modal_body_content": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat, orci auctor condimentum vel per donec faucibus bibendum, praesent odio curae taciti ullamcorper torquent magnis. Cursus ligula magnis dictumst cum dis, quis sodales nascetur arcu habitasse fames, leo iaculis ridiculus molestie. Iaculis curae nisl accumsan integer ac justo magnis ut, maecenas eu nibh dictumst viverra dapibus cursus. Mollis lacus dis ac montes facilisi duis tellus fermentum euismod aliquet, curabitur nam urna ornare maecenas habitant ad interdum tempor mus tortor, ultrices dictum odio ullamcorper venenatis enim dictumst litora mauris. Nisi nulla condimentum maecenas viverra lobortis senectus fames, luctus placerat at pharetra justo cras suscipit blandit, dui sodales sem est class posuere. Cursus cras lacinia lobortis placerat lacus proin nostra aliquam, varius sapien ante viverra torquent fringilla convallis vitae platea, enim elementum pellentesque dictumst inceptos mauris purus. Ultrices dictum sagittis nascetur pharetra inceptos ullamcorper arcu augue id sapien tincidunt, auctor facilisis nullam scelerisque placerat nulla egestas risus tempor varius erat mauris, nisi lacinia suscipit cursus per aliquet maecenas proin justo eget. Ad tempus nunc habitasse pharetra potenti nec sodales dis, lacinia nisi dignissim interdum arcu volutpat netus euismod, erat tellus in imperdiet orci vitae ornare. Ullamcorper phasellus hendrerit montes cursus convallis commodo maecenas facilisis blandit, enim euismod sollicitudin molestie elementum aptent morbi netus sociosqu, semper condimentum quis mi rhoncus accumsan primis sem.<\/p>",
-            "modal_content_image": "shopify:\/\/shop_images\/13067101002_1_540x720_72_RGB.jpg",
-            "modal_link_text": "Contact",
-            "modal_link_url": "shopify:\/\/pages\/contact",
-            "modal_link_button": true
-          }
-        },
-        "9a40292d-a40d-46fd-9dac-b414c44c65bc": {
-          "type": "item",
-          "settings": {
-            "modal_trigger_type": "modal_trigger_link",
-            "trigger_button_title": "Modal Button",
-            "trigger_link_title": "Modal Link",
-            "trigger_link_image_orientation": "landscape",
-            "modal_header_title": "Modal Header Title",
-            "modal_title": "Modal Content Title",
-            "modal_body_content": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat, orci auctor condimentum vel per donec faucibus bibendum, praesent odio curae taciti ullamcorper torquent magnis. Cursus ligula magnis dictumst cum dis, quis sodales nascetur arcu habitasse fames, leo iaculis ridiculus molestie. Iaculis curae nisl accumsan integer ac justo magnis ut, maecenas eu nibh dictumst viverra dapibus cursus. Mollis lacus dis ac montes facilisi duis tellus fermentum euismod aliquet, curabitur nam urna ornare maecenas habitant ad interdum tempor mus tortor, ultrices dictum odio ullamcorper venenatis enim dictumst litora mauris. Nisi nulla condimentum maecenas viverra lobortis senectus fames, luctus placerat at pharetra justo cras suscipit blandit, dui sodales sem est class posuere. Cursus cras lacinia lobortis placerat lacus proin nostra aliquam, varius sapien ante viverra torquent fringilla convallis vitae platea, enim elementum pellentesque dictumst inceptos mauris purus. Ultrices dictum sagittis nascetur pharetra inceptos ullamcorper arcu augue id sapien tincidunt, auctor facilisis nullam scelerisque placerat nulla egestas risus tempor varius erat mauris, nisi lacinia suscipit cursus per aliquet maecenas proin justo eget. Ad tempus nunc habitasse pharetra potenti nec sodales dis, lacinia nisi dignissim interdum arcu volutpat netus euismod, erat tellus in imperdiet orci vitae ornare. Ullamcorper phasellus hendrerit montes cursus convallis commodo maecenas facilisis blandit, enim euismod sollicitudin molestie elementum aptent morbi netus sociosqu, semper condimentum quis mi rhoncus accumsan primis sem.<\/p>",
-            "modal_link_text": "Modal Link",
-            "modal_link_url": "shopify:\/\/collections\/all",
-            "modal_link_button": true
-          }
-        },
-        "61b8a834-4f1a-42cb-a394-4d5fefc3aafd": {
-          "type": "item",
-          "settings": {
-            "modal_trigger_type": "modal_trigger_button",
-            "trigger_button_title": "Modal Button",
-            "trigger_link_title": "",
-            "trigger_link_image_orientation": "landscape",
-            "modal_header_title": "Modal Header Title",
-            "modal_title": "Modal Content Title",
-            "modal_body_content": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat, orci auctor condimentum vel per donec faucibus bibendum, praesent odio curae taciti ullamcorper torquent magnis. Cursus ligula magnis dictumst cum dis, quis sodales nascetur arcu habitasse fames, leo iaculis ridiculus molestie. Iaculis curae nisl accumsan integer ac justo magnis ut, maecenas eu nibh dictumst viverra dapibus cursus. Mollis lacus dis ac montes facilisi duis tellus fermentum euismod aliquet, curabitur nam urna ornare maecenas habitant ad interdum tempor mus tortor, ultrices dictum odio ullamcorper venenatis enim dictumst litora mauris. Nisi nulla condimentum maecenas viverra lobortis senectus fames, luctus placerat at pharetra justo cras suscipit blandit, dui sodales sem est class posuere. Cursus cras lacinia lobortis placerat lacus proin nostra aliquam, varius sapien ante viverra torquent fringilla convallis vitae platea, enim elementum pellentesque dictumst inceptos mauris purus. Ultrices dictum sagittis nascetur pharetra inceptos ullamcorper arcu augue id sapien tincidunt, auctor facilisis nullam scelerisque placerat nulla egestas risus tempor varius erat mauris, nisi lacinia suscipit cursus per aliquet maecenas proin justo eget. Ad tempus nunc habitasse pharetra potenti nec sodales dis, lacinia nisi dignissim interdum arcu volutpat netus euismod, erat tellus in imperdiet orci vitae ornare. Ullamcorper phasellus hendrerit montes cursus convallis commodo maecenas facilisis blandit, enim euismod sollicitudin molestie elementum aptent morbi netus sociosqu, semper condimentum quis mi rhoncus accumsan primis sem.<\/p>",
-            "modal_link_text": "Modal Link",
-            "modal_link_url": "",
-            "modal_link_button": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16187564163222__643177c8-6aa7-4b27-95d9-b5b7c25e467a-item-1",
-        "861dfc12-81dd-4aa7-9375-391d6d87c451",
-        "9a40292d-a40d-46fd-9dac-b414c44c65bc",
-        "61b8a834-4f1a-42cb-a394-4d5fefc3aafd"
-      ],
-      "settings": {
-        "modal_size": "modal-dialog modal-xl"
-      }
     }
   },
   "order": [
@@ -509,7 +432,6 @@
     "165175524396f2667c",
     "c74ebbe2-8be5-4594-80c9-25bb5250e03b",
     "16517348541d37c171",
-    "1ab6c22f-7e79-4e79-b4b5-e0939ba5593b",
-    "643177c8-6aa7-4b27-95d9-b5b7c25e467a"
+    "1ab6c22f-7e79-4e79-b4b5-e0939ba5593b"
   ]
 }
