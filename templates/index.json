@@ -148,6 +148,52 @@
         "tab_orientation": "flex-column"
       }
     },
+    "0275cba4-6699-489d-a7d8-e6fa8552b887": {
+      "type": "tabs",
+      "blocks": {
+        "template--16193952514198__0275cba4-6699-489d-a7d8-e6fa8552b887-item-1": {
+          "type": "item",
+          "settings": {
+            "tab_nav_pill_title": "Tab Button 1",
+            "tab_content_title": "Tab Content Title 1",
+            "tab_content_body": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit primis, facilisis vestibulum sem fringilla potenti dictum rhoncus imperdiet at, tortor auctor ullamcorper quis sagittis sollicitudin convallis. Ultrices conubia ultricies lacinia aptent nostra ac tristique, vel lacus suspendisse ut sollicitudin class maecenas mattis, ligula habitasse tortor elementum inceptos eget. Bibendum senectus vivamus lacinia ut aliquet venenatis a metus eleifend convallis massa, himenaeos donec porta taciti augue fusce ac potenti volutpat fermentum torquent, tortor montes dignissim odio in magna posuere lobortis consequat vestibulum.<\/p>",
+            "tab_link_text": "Tab Link",
+            "tab_link_url": "",
+            "tab_link_button": false
+          }
+        },
+        "97ec0e41-420c-4f97-b244-34b57c1476e3": {
+          "type": "item",
+          "settings": {
+            "tab_nav_pill_title": "Tab Button 2",
+            "tab_content_title": "Tab Content Title 2",
+            "tab_content_body": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit primis, facilisis vestibulum sem fringilla potenti dictum rhoncus imperdiet at, tortor auctor ullamcorper quis sagittis sollicitudin convallis. Ultrices conubia ultricies lacinia aptent nostra ac tristique, vel lacus suspendisse ut sollicitudin class maecenas mattis, ligula habitasse tortor elementum inceptos eget. Bibendum senectus vivamus lacinia ut aliquet venenatis a metus eleifend convallis massa, himenaeos donec porta taciti augue fusce ac potenti volutpat fermentum torquent, tortor montes dignissim odio in magna posuere lobortis consequat vestibulum.<\/p>",
+            "tab_link_text": "Tab Link",
+            "tab_link_url": "",
+            "tab_link_button": false
+          }
+        },
+        "f086c1a8-14b7-4b24-aad2-0a3bc430ecd9": {
+          "type": "item",
+          "settings": {
+            "tab_nav_pill_title": "Tab Button 3",
+            "tab_content_title": "Tab Content Title 3",
+            "tab_content_body": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit primis, facilisis vestibulum sem fringilla potenti dictum rhoncus imperdiet at, tortor auctor ullamcorper quis sagittis sollicitudin convallis. Ultrices conubia ultricies lacinia aptent nostra ac tristique, vel lacus suspendisse ut sollicitudin class maecenas mattis, ligula habitasse tortor elementum inceptos eget. Bibendum senectus vivamus lacinia ut aliquet venenatis a metus eleifend convallis massa, himenaeos donec porta taciti augue fusce ac potenti volutpat fermentum torquent, tortor montes dignissim odio in magna posuere lobortis consequat vestibulum.<\/p>",
+            "tab_link_text": "Tab Link",
+            "tab_link_url": "",
+            "tab_link_button": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16193952514198__0275cba4-6699-489d-a7d8-e6fa8552b887-item-1",
+        "97ec0e41-420c-4f97-b244-34b57c1476e3",
+        "f086c1a8-14b7-4b24-aad2-0a3bc430ecd9"
+      ],
+      "settings": {
+        "tab_orientation": "flex-row"
+      }
+    },
     "1651733459a1bea1c2": {
       "type": "featured-collections",
       "blocks": {
@@ -484,6 +530,7 @@
     "carousel",
     "165151877352b831f8",
     "9d61a598-5940-4f65-a067-fd78947ed7b0",
+    "0275cba4-6699-489d-a7d8-e6fa8552b887",
     "1651733459a1bea1c2",
     "16527743361f98366e",
     "1651754599ab801902",
