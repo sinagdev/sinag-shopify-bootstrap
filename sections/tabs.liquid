@@ -1,8 +1,8 @@
 <div class="container">
-  <div class="d-flex {{ section.settings.tab_orientation }}">
+  <div class="tabs tabs--{{ section.settings.tab_orientation }}">
 
     <ul
-      class="nav nav-pills mb-3{{ section.settings.tab_orientation == 'flex-row' | assign: 'flex-column' }}"
+      class="nav nav-pills"
       id="pills-tab"
       role="tablist">
 
@@ -60,14 +60,14 @@
         "type": "select",
         "id": "tab_orientation",
         "label": "Select the Tab layout orientation",
-        "default": "flex-column",
+        "default": "horizontal",
         "options": [
           {
-            "value": "flex-column",
+            "value": "horizontal",
             "label": "Horizontal"
           },
           {
-            "value": "flex-row",
+            "value": "vertical",
             "label": "Vertical"
           }
         ]

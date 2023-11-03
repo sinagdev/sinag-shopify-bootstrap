@@ -221,7 +221,6 @@
 */
 .nav-pills {
   --bs-nav-pills-link-active-bg: var(--bs-primary);
-  min-width: 150px;
 }
 
 /*
@@ -887,4 +886,23 @@ a:hover .product-item-img {
   .collection .product-item-price {
     font-size: 0.875rem;
   }
+}
+.tabs {
+  display: flex;
+}
+.tabs--horizontal {
+  flex-direction: column;
+}
+.tabs--horizontal .nav-pills {
+  margin-bottom: 3rem;
+}
+.tabs--vertical {
+  flex-direction: row;
+}
+.tabs--vertical .nav-pills {
+  flex-direction: column;
+  margin-right: 1.5rem;
+}
+.tabs .nav-pills {
+  min-width: 150px;
 }
