@@ -145,7 +145,7 @@
         "f96e42c9-9cdb-4f03-bfbf-f58d39608721"
       ],
       "settings": {
-        "tab_orientation": "flex-column"
+        "tab_orientation": "flex-row"
       }
     },
     "0275cba4-6699-489d-a7d8-e6fa8552b887": {
@@ -191,7 +191,7 @@
         "f086c1a8-14b7-4b24-aad2-0a3bc430ecd9"
       ],
       "settings": {
-        "tab_orientation": "flex-row"
+        "tab_orientation": "flex-column"
       }
     },
     "1651733459a1bea1c2": {
