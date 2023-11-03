@@ -524,6 +524,40 @@
         "mt": 0,
         "mb": 0
       }
+    },
+    "3963d5e7-c053-4a07-ab73-50affa97e43c": {
+      "type": "tabs",
+      "blocks": {
+        "template--16193952514198__3963d5e7-c053-4a07-ab73-50affa97e43c-item-1": {
+          "type": "item",
+          "settings": {
+            "tab_nav_pill_title": "Tab Button 1",
+            "tab_content_title": "Tab Content Title 1",
+            "tab_content_body": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit gravida auctor posuere, netus aenean fringilla tempor augue class montes scelerisque imperdiet placerat, dui dictumst venenatis vel volutpat et proin sodales tempus. Torquent commodo placerat erat venenatis eleifend nibh rutrum mattis ullamcorper nisi primis est, iaculis tincidunt facilisis ultrices blandit aliquet nec mollis pharetra laoreet. Habitasse ridiculus nec eros sem suscipit nostra viverra tempor, ullamcorper potenti ut morbi leo magna senectus sed, tellus tortor turpis lectus aenean fermentum gravida. Nisl parturient at facilisis sed semper aenean condimentum, feugiat pretium risus nostra ornare consequat vivamus commodo, libero congue proin vestibulum rutrum etiam. Aliquet pretium curae morbi, purus habitant. Dignissim vitae venenatis tortor eget nec ornare massa dapibus sed gravida, potenti iaculis sodales urna facilisi inceptos lacinia nisi facilisis morbi velit, turpis phasellus vivamus hendrerit pulvinar nulla integer torquent lobortis. Proin suscipit himenaeos euismod platea aliquam porta lectus vehicula maecenas pretium, metus libero lacus enim porttitor mollis litora scelerisque convallis malesuada inceptos, tristique etiam placerat magna tincidunt feugiat tempus mus fusce.<\/p>",
+            "tab_link_text": "Tab Link",
+            "tab_link_url": "",
+            "tab_link_button": false
+          }
+        },
+        "ef58f402-d3de-453f-8f6f-58b2d45d1dd9": {
+          "type": "item",
+          "settings": {
+            "tab_nav_pill_title": "Tab Button 2",
+            "tab_content_title": "Tab Content Title 2",
+            "tab_content_body": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit gravida auctor posuere, netus aenean fringilla tempor augue class montes scelerisque imperdiet placerat, dui dictumst venenatis vel volutpat et proin sodales tempus. Torquent commodo placerat erat venenatis eleifend nibh rutrum mattis ullamcorper nisi primis est, iaculis tincidunt facilisis ultrices blandit aliquet nec mollis pharetra laoreet. Habitasse ridiculus nec eros sem suscipit nostra viverra tempor, ullamcorper potenti ut morbi leo magna senectus sed, tellus tortor turpis lectus aenean fermentum gravida. Nisl parturient at facilisis sed semper aenean condimentum, feugiat pretium risus nostra ornare consequat vivamus commodo, libero congue proin vestibulum rutrum etiam. Aliquet pretium curae morbi, purus habitant. Dignissim vitae venenatis tortor eget nec ornare massa dapibus sed gravida, potenti iaculis sodales urna facilisi inceptos lacinia nisi facilisis morbi velit, turpis phasellus vivamus hendrerit pulvinar nulla integer torquent lobortis. Proin suscipit himenaeos euismod platea aliquam porta lectus vehicula maecenas pretium, metus libero lacus enim porttitor mollis litora scelerisque convallis malesuada inceptos, tristique etiam placerat magna tincidunt feugiat tempus mus fusce.<\/p>",
+            "tab_link_text": "Tab Link",
+            "tab_link_url": "",
+            "tab_link_button": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16193952514198__3963d5e7-c053-4a07-ab73-50affa97e43c-item-1",
+        "ef58f402-d3de-453f-8f6f-58b2d45d1dd9"
+      ],
+      "settings": {
+        "tab_orientation": "flex-row"
+      }
     }
   },
   "order": [
@@ -538,6 +572,7 @@
     "165175524396f2667c",
     "c74ebbe2-8be5-4594-80c9-25bb5250e03b",
     "16517348541d37c171",
-    "1ab6c22f-7e79-4e79-b4b5-e0939ba5593b"
+    "1ab6c22f-7e79-4e79-b4b5-e0939ba5593b",
+    "3963d5e7-c053-4a07-ab73-50affa97e43c"
   ]
 }
