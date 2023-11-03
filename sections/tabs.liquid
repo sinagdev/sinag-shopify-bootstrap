@@ -31,9 +31,9 @@
           role="tabpanel"
           aria-labelledby="pills-{{ section.id }}-{{ forloop.index }}-tab">
           {% if block.settings.tab_content_title != blank %}
-            <div class="tab-content__title">
+            <h5 class="tab-content__title">
               {{ block.settings.tab_content_title }}
-            </div>
+            </h5>
           {% endif %}
 
           {% if block.settings.tab_content_body != empty %}

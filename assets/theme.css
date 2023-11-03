@@ -894,7 +894,7 @@ a:hover .product-item-img {
   flex-direction: column;
 }
 .tabs--horizontal .nav-pills {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 .tabs--vertical {
   flex-direction: row;
@@ -904,5 +904,8 @@ a:hover .product-item-img {
   margin-right: 1.5rem;
 }
 .tabs .nav-pills {
-  min-width: 150px;
+  min-width: 130px;
+}
+.tabs .tab-content__title {
+  margin-bottom: 1rem;
 }
