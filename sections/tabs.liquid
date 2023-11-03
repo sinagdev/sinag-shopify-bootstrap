@@ -1,11 +1,12 @@
 <div class="container">
   <div class="row">
-    {% for block in section.blocks %}
+
       {% if block.settings.tab_nav_pill_title != blank %}
         <ul
           class="nav nav-pills mb-3"
           id="pills-tab"
           role="tablist">
+          {% for block in section.blocks %}
           <li class="nav-item" role="presentation">
             <button
               class="nav-link active"
@@ -14,19 +15,23 @@
               data-bs-target="#tab-{{ section.id }}-{{ forloop.index }}"
               type="button"
               role="tab"
-              aria-controls="pills-home"
+              aria-controls="{{ section.title }}-{{ block.title }}"
               aria-selected="true">
               {{ block.settings.tab_nav_pill_title }}
             </button>
           </li>
+        {% endfor %}
         </ul>
       {% endif %}
+
+      
+      {% for block in section.blocks %}
       <div class="tab-content" id="pills-tabContent">
         <div
           class="tab-pane fade show active"
           id="tab-{{ section.id }}-{{ forloop.index }}"
           role="tabpanel"
-          aria-labelledby="{{ section.title }}-{{ block.id }}">
+          aria-labelledby="{{ section.title }}-{{ block.title }}">
 
           {% if block.settings.tab_content_title != blank %}
             <div class="tab-content__title">
@@ -39,7 +44,7 @@
               {{ block.settings.tab_content_body }}
             </div>
           {% endif %}
-          
+
         </div>
       </div>
     {% endfor %}
