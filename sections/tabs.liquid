@@ -1,0 +1,120 @@
+<div class="container">
+  <div class="row">
+    {% for block in section.blocks %}
+      {% if block.settings.tab_nav_pill_title != blank %}
+        <ul
+          class="nav nav-pills mb-3"
+          id="pills-tab"
+          role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#tab-{{ section.id }}-{{ forloop.index }}"
+              type="button"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true">
+              {{ block.settings.tab_nav_pill_title }}
+            </button>
+          </li>
+        </ul>
+      {% endif %}
+      <div class="tab-content" id="pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="tab-{{ section.id }}-{{ forloop.index }}"
+          role="tabpanel"
+          aria-labelledby="{{ section.title }}-{{ block.id }}">
+
+          {% if block.settings.tab_content_title != blank %}
+            <div class="tab-content__title">
+              {{ block.settings.tab_content_title }}
+            </div>
+          {% endif %}
+
+          {% if block.settings.tab_content_body != empty %}
+            <div class="tab-content__body">
+              {{ block.settings.tab_content_body }}
+            </div>
+          {% endif %}
+          
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Tabs",
+    "blocks": [
+      {
+        "type": "item",
+        "name": "Tab Item",
+        "settings": [
+          {
+            "type": "header",
+            "content": "Tab Nav Pill"
+          },
+          {
+            "type": "text",
+            "id": "tab_nav_pill_title",
+            "label": "Tab Nav Pill Button",
+            "default": "Tab Button"
+          },
+          {
+            "type": "header",
+            "content": "Tab Content"
+          },
+          {
+            "type": "text",
+            "id": "tab_content_title",
+            "label": "Tab Content Title",
+            "default": "Tab Content Title"
+          },
+          {
+            "type": "richtext",
+            "id": "tab_content_body",
+            "label": "Tab Body Content"
+          },
+          {
+            "type": "image_picker",
+            "id": "tab_content_image",
+            "label": "Tab Content Image"
+          },
+          {
+            "type": "text",
+            "id": "tab_link_text",
+            "label": "Tab Link Text",
+            "default": "Tab Link"
+          },
+          {
+            "type": "url",
+            "id": "tab_link_url",
+            "label": "Tab Link URL"
+          },
+          {
+            "type": "checkbox",
+            "id": "tab_link_button",
+            "label": "Use Tab Link as a Button",
+            "info": "Check this if you want the provided URL to act as a button within the tab.",
+            "default": false
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Tabs",
+        "category": "General",
+        "blocks": [
+          {
+            "type": "item"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
