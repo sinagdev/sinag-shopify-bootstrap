@@ -1,12 +1,10 @@
 <div class="container">
   <div class="d-flex {{ section.settings.tab_orientation }}">
     <ul
-      class="nav nav-pills mb-3
-      {% if section.settings.tab_orientation == 'flex-row' %}
-        flex-column me-3
-      {% endif %}"
+      class="nav nav-pills{% capture tabClasses %}{% if section.settings.tab_orientation == 'flex-row' %} flex-column me-3 col{% endif %}{% endcapture %} {{ tabClasses }}"
       id="pills-tab"
       role="tablist">
+
       {% for block in section.blocks %}
         <li class="nav-item" role="presentation">
           <button
@@ -24,7 +22,8 @@
       {% endfor %}
     </ul>
 
-    <div class="tab-content" id="pills-tabContent">
+    <div class="tab-content{{ section.settings.tab_orientation == 'flex-column' | assign: ' col-lg-10' }}" id="pills-tabContent">
+
       {% for block in section.blocks %}
         <div
           class="tab-pane fade{% if forloop.index == 1 %} show active{% endif %}"
@@ -61,7 +60,7 @@
         "type": "select",
         "id": "tab_orientation",
         "label": "Select the Tab layout orientation",
-        "default": "flex-row",
+        "default": "flex-column",
         "options": [
           {
             "value": "flex-column",
