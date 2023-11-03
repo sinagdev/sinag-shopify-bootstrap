@@ -51,95 +51,6 @@
         "mb": 0
       }
     },
-    "670dbb8e-25d8-48fc-ae82-ec199f6ac090": {
-      "type": "modal",
-      "blocks": {
-        "template--16187564163222__670dbb8e-25d8-48fc-ae82-ec199f6ac090-item-1": {
-          "type": "item",
-          "settings": {
-            "modal_trigger_type": "modal_trigger_button",
-            "trigger_button_title": "Modal Button",
-            "trigger_link_title": "",
-            "trigger_link_image_orientation": "thumbnail",
-            "modal_header_title": "Modal Header Title",
-            "modal_title": "Modal Content Title",
-            "modal_body_content": "",
-            "modal_content_image": "shopify:\/\/shop_images\/10231100205_1_1315x1800_300_CMYK.jpg",
-            "modal_link_text": "Modal Link",
-            "modal_link_url": "",
-            "modal_link_button": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16187564163222__670dbb8e-25d8-48fc-ae82-ec199f6ac090-item-1"
-      ],
-      "settings": {
-        "modal_size": "modal-dialog modal-xl"
-      }
-    },
-    "26a75869-068d-4a52-9465-4e36c4ac04ca": {
-      "type": "modal",
-      "blocks": {
-        "template--16187564163222__26a75869-068d-4a52-9465-4e36c4ac04ca-item-1": {
-          "type": "item",
-          "settings": {
-            "modal_trigger_type": "modal_trigger_button",
-            "trigger_button_title": "Modal Button",
-            "trigger_link_title": "",
-            "trigger_link_image_orientation": "landscape",
-            "modal_header_title": "Modal Header Title",
-            "modal_title": "Modal Content Title 1",
-            "modal_body_content": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit vehicula sagittis tempor, phasellus ut curabitur proin litora aptent vestibulum accumsan interdum, nam potenti dictumst scelerisque nostra aliquet varius placerat ante. Lacus ante montes ad per elementum placerat torquent integer parturient dictumst proin, nascetur semper senectus posuere mollis cursus accumsan id fermentum. Donec tellus massa sem ultrices magnis curae libero fames tristique class, quis iaculis fringilla nec varius semper torquent tempus hendrerit, mauris gravida vivamus inceptos aliquam urna cras augue nunc. Pulvinar neque dignissim purus curae cursus lectus condimentum porttitor sociis, tincidunt odio blandit tristique primis augue pretium gravida feugiat imperdiet, proin diam hac vitae elementum consequat nisi cras. Condimentum ornare enim duis parturient nascetur placerat dictum, ridiculus varius netus montes ante magnis, ac habitasse cursus arcu risus sed.<\/p>",
-            "modal_content_image": "shopify:\/\/shop_images\/10231100702_1_1272x1800_300_RGB.jpg",
-            "modal_link_text": "Modal Link",
-            "modal_link_url": "",
-            "modal_link_button": false
-          }
-        },
-        "07eefb1a-7e8b-40e6-92b9-78eef6d430a5": {
-          "type": "item",
-          "settings": {
-            "modal_trigger_type": "modal_trigger_link",
-            "trigger_button_title": "Modal Button",
-            "trigger_link_title": "Modal Link",
-            "trigger_link_image_orientation": "landscape",
-            "modal_header_title": "Modal Header Title",
-            "modal_title": "Modal Content Title 2",
-            "modal_body_content": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit vehicula sagittis tempor, phasellus ut curabitur proin litora aptent vestibulum accumsan interdum, nam potenti dictumst scelerisque nostra aliquet varius placerat ante. Lacus ante montes ad per elementum placerat torquent integer parturient dictumst proin, nascetur semper senectus posuere mollis cursus accumsan id fermentum. Donec tellus massa sem ultrices magnis curae libero fames tristique class, quis iaculis fringilla nec varius semper torquent tempus hendrerit, mauris gravida vivamus inceptos aliquam urna cras augue nunc. Pulvinar neque dignissim purus curae cursus lectus condimentum porttitor sociis, tincidunt odio blandit tristique primis augue pretium gravida feugiat imperdiet, proin diam hac vitae elementum consequat nisi cras. Condimentum ornare enim duis parturient nascetur placerat dictum, ridiculus varius netus montes ante magnis, ac habitasse cursus arcu risus sed.<\/p>",
-            "modal_content_image": "shopify:\/\/shop_images\/13067101002_1_540x720_72_RGB.jpg",
-            "modal_link_text": "Modal Link",
-            "modal_link_url": "",
-            "modal_link_button": false
-          }
-        },
-        "c1fa9364-d918-42e4-b471-8a3014a48ea2": {
-          "type": "item",
-          "settings": {
-            "modal_trigger_type": "modal_trigger_link",
-            "trigger_button_title": "Modal Button",
-            "trigger_link_title": "",
-            "trigger_link_image": "shopify:\/\/shop_images\/10542101311_1_1725x1800_300_RGB.jpg",
-            "trigger_link_image_orientation": "thumbnail",
-            "modal_header_title": "Modal Header Title",
-            "modal_title": "Modal Content Title 3",
-            "modal_body_content": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit vehicula sagittis tempor, phasellus ut curabitur proin litora aptent vestibulum accumsan interdum, nam potenti dictumst scelerisque nostra aliquet varius placerat ante. Lacus ante montes ad per elementum placerat torquent integer parturient dictumst proin, nascetur semper senectus posuere mollis cursus accumsan id fermentum. Donec tellus massa sem ultrices magnis curae libero fames tristique class, quis iaculis fringilla nec varius semper torquent tempus hendrerit, mauris gravida vivamus inceptos aliquam urna cras augue nunc. Pulvinar neque dignissim purus curae cursus lectus condimentum porttitor sociis, tincidunt odio blandit tristique primis augue pretium gravida feugiat imperdiet, proin diam hac vitae elementum consequat nisi cras. Condimentum ornare enim duis parturient nascetur placerat dictum, ridiculus varius netus montes ante magnis, ac habitasse cursus arcu risus sed.<\/p>",
-            "modal_content_image": "shopify:\/\/shop_images\/41CFD39GacL._SX425.jpg",
-            "modal_link_text": "Modal Link",
-            "modal_link_url": "",
-            "modal_link_button": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16187564163222__26a75869-068d-4a52-9465-4e36c4ac04ca-item-1",
-        "07eefb1a-7e8b-40e6-92b9-78eef6d430a5",
-        "c1fa9364-d918-42e4-b471-8a3014a48ea2"
-      ],
-      "settings": {
-        "modal_size": "modal-dialog modal-xl"
-      }
-    },
     "165151877352b831f8": {
       "type": "featured-products",
       "settings": {
@@ -513,8 +424,6 @@
   },
   "order": [
     "carousel",
-    "670dbb8e-25d8-48fc-ae82-ec199f6ac090",
-    "26a75869-068d-4a52-9465-4e36c4ac04ca",
     "165151877352b831f8",
     "1651733459a1bea1c2",
     "16527743361f98366e",
