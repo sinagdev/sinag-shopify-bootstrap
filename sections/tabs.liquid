@@ -1,6 +1,12 @@
 <div class="container">
-  <div class="row">
-    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <div class="d-flex {{ section.settings.tab_orientation }}">
+    <ul
+      class="nav nav-pills mb-3
+      {% if section.settings.tab_orientation == 'flex-row' %}
+        flex-column me-3
+      {% endif %}"
+      id="pills-tab"
+      role="tablist">
       {% for block in section.blocks %}
         <li class="nav-item" role="presentation">
           <button
@@ -20,7 +26,11 @@
 
     <div class="tab-content" id="pills-tabContent">
       {% for block in section.blocks %}
-        <div class="tab-pane fade{% if forloop.index == 1 %} show active{% endif %}" id="tab-{{ section.id }}-{{ forloop.index }}" role="tabpanel" aria-labelledby="pills-{{ section.id }}-{{ forloop.index }}-tab">
+        <div
+          class="tab-pane fade{% if forloop.index == 1 %} show active{% endif %}"
+          id="tab-{{ section.id }}-{{ forloop.index }}"
+          role="tabpanel"
+          aria-labelledby="pills-{{ section.id }}-{{ forloop.index }}-tab">
           {% if block.settings.tab_content_title != blank %}
             <div class="tab-content__title">
               {{ block.settings.tab_content_title }}
@@ -42,6 +52,28 @@
 {% schema %}
   {
     "name": "Tabs",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Tab Orientation"
+      },
+      {
+        "type": "select",
+        "id": "tab_orientation",
+        "label": "Select the Tab layout orientation",
+        "default": "flex-row",
+        "options": [
+          {
+            "value": "flex-column",
+            "label": "Horizontal"
+          },
+          {
+            "value": "flex-row",
+            "label": "Vertical"
+          }
+        ]
+      }
+    ],
     "blocks": [
       {
         "type": "item",
