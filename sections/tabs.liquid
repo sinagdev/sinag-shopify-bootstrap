@@ -1,36 +1,29 @@
 <div class="container">
   <div class="tabs tabs--{{ section.settings.tab_orientation }}">
-    <div class="tabs__nav-container d-md-flex">
-      <ul
-        class="tabs__pills nav nav-pills d-none d-md-flex"
-        id="pills-tab-{{ section.id }}"
-        role="tablist">
-        {% for block in section.blocks %}
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link{% if forloop.index == 1 %} active{% endif %}"
-              id="pills-{{ section.id }}-{{ forloop.index }}-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#tab-{{ section.id }}-{{ forloop.index }}"
-              type="button"
-              role="tab"
-              aria-controls="{{ section.title }}-{{ block.title }}"
-              aria-selected="{% if forloop.index == 1 %}true{% else %}false{% endif %}">
-              {{ block.settings.tab_nav_pill_title }}
-            </button>
-          </li>
-        {% endfor %}
-      </ul>
-      <select class="tabs__select form-select d-md-none" data-tabs-section="{{ section.id }}">
-        {% for block in section.blocks %}
-          <option value="{{ section.id }}-{{ forloop.index }}">
-            {{ block.settings.tab_nav_pill_title }}
-          </option>
-        {% endfor %}
-      </select>
-    </div>
 
-    <div class="tabs__content tab-content" id="pills-tabContent-{{ section.id }}">
+    <ul
+      class="nav nav-pills"
+      id="pills-tab"
+      role="tablist">
+
+      {% for block in section.blocks %}
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link{% if forloop.index == 1 %} active{% endif %}"
+            id="pills-{{ section.id }}-{{ forloop.index }}-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#tab-{{ section.id }}-{{ forloop.index }}"
+            type="button"
+            role="tab"
+            aria-controls="{{ section.title }}-{{ block.title }}"
+            aria-selected="{% if forloop.index == 1 %}true{% else %}false{% endif %}">
+            {{ block.settings.tab_nav_pill_title }}
+          </button>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <div class="tab-content" id="pills-tabContent">
       {% for block in section.blocks %}
         <div
           class="tab-pane fade{% if forloop.index == 1 %} show active{% endif %}"
@@ -53,6 +46,7 @@
     </div>
   </div>
 </div>
+
 
 {% schema %}
   {
