@@ -3,7 +3,7 @@
     <div class="tabs__nav-container d-md-flex">
       <ul
         class="tabs__pills nav nav-pills d-none d-md-flex"
-        id="pills-tab"
+        id="pills-tab-{{ section.id }}"
         role="tablist">
         {% for block in section.blocks %}
           <li class="nav-item" role="presentation">
@@ -21,16 +21,16 @@
           </li>
         {% endfor %}
       </ul>
-      <select class="tabs__select form-select d-md-none" id="tab-select">
+      <select class="tabs__select form-select d-md-none" data-tabs-section="{{ section.id }}">
         {% for block in section.blocks %}
-          <option value="#tab-{{ section.id }}-{{ forloop.index }}">
+          <option value="{{ section.id }}-{{ forloop.index }}">
             {{ block.settings.tab_nav_pill_title }}
           </option>
         {% endfor %}
       </select>
     </div>
 
-    <div class="tabs__content tab-content" id="pills-tabContent">
+    <div class="tabs__content tab-content" id="pills-tabContent-{{ section.id }}">
       {% for block in section.blocks %}
         <div
           class="tab-pane fade{% if forloop.index == 1 %} show active{% endif %}"
@@ -53,7 +53,6 @@
     </div>
   </div>
 </div>
-
 
 {% schema %}
   {

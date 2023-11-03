@@ -95,7 +95,7 @@ eval("function _typeof(o) { \"@babel/helpers - typeof\"; return _typeof = \"func
   \**************************************/
 /***/ (() => {
 
-eval("document.addEventListener('DOMContentLoaded', function () {\n  var tabSelects = document.querySelectorAll('.tabs__select');\n  var tabContents = document.querySelectorAll('.tabs__content');\n  tabSelects.forEach(function (select) {\n    select.addEventListener('change', function () {\n      var selectedTabId = select.value;\n      var tabContent = document.querySelector(selectedTabId);\n      tabContents.forEach(function (content) {\n        content.classList.remove('show', 'active');\n      });\n      tabContent.classList.add('show', 'active');\n    });\n  });\n});\n\n//# sourceURL=webpack:///./src/scripts/sections/tabs.js?");
+eval("document.addEventListener('DOMContentLoaded', function () {\n  var tabSelects = document.querySelectorAll('.tabs__select');\n  var tabContents = document.querySelectorAll('.tabs__content .tab-pane');\n  tabSelects.forEach(function (select) {\n    select.addEventListener('change', function () {\n      var sectionId = select.getAttribute('data-tabs-section');\n      var selectedTabId = 'tab-' + sectionId + '-' + select.value;\n      tabContents.forEach(function (content) {\n        content.classList.remove('show', 'active');\n      });\n      var tabContent = document.querySelector('#' + selectedTabId);\n      tabContent.classList.add('show', 'active');\n    });\n  });\n});\n\n//# sourceURL=webpack:///./src/scripts/sections/tabs.js?");
 
 /***/ }),
 
