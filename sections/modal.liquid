@@ -3,120 +3,132 @@
   assign pb = block.settings.pb | prepend: 'pb-'
   assign mt = block.settings.mt | prepend: 'mt-'
   assign mb = block.settings.mb | prepend: 'mb-'
+
+  assign row_xs =  section.settings.row_xs | prepend: 'row-cols-'
+  assign row_sm =  section.settings.row_sm | prepend: 'row-cols-sm-'
+  assign row_lg =  section.settings.row_lg | prepend: 'row-cols-lg-'
 %}
 
 
-{% for block in section.blocks %}
+<div class="container">
+  <div class="row mx-n3 mx-lg-n4 {{ row_xs }} {{ row_sm }} {{ row_lg }}">
 
-  {% liquid
-    case block.settings.trigger_link_image_orientation
-      when 'thumbnail'
-        assign img_width = 150
-        assign img_height = 150
-      when 'square'
-        assign img_width = 300
-        assign img_height = 300
-      when 'landscape'
-        assign img_width = 600
-        assign img_height = 480
-      when 'potrait'
-        assign img_width = 480
-        assign img_height = 600
-    endcase
-  %}
+    {% for block in section.blocks %}
 
+      <div class="col p-3 p-lg-4">
+        {% liquid
+          case block.settings.trigger_link_image_orientation
+            when 'thumbnail'
+              assign img_width = 150
+              assign img_height = 150
+            when 'square'
+              assign img_width = 300
+              assign img_height = 300
+            when 'landscape'
+              assign img_width = 600
+              assign img_height = 480
+            when 'potrait'
+              assign img_width = 480
+              assign img_height = 600
+          endcase
+        %}
 
-  <!-- Button trigger modal -->
-  {% if block.settings.modal_trigger_type == 'modal_trigger_button' and block.settings.trigger_button_title != blank %}
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#modal-{{ section.id }}-{{ forloop.index }}">
-      {{ block.settings.trigger_button_title }}
-    </button>
-  {% elsif block.settings.modal_trigger_type == 'modal_trigger_link' %}
-    <a
-      href="#"
-      data-bs-toggle="modal"
-      data-bs-target="#modal-{{ section.id }}-{{ forloop.index }}"
-      title="{{ block.settings.title }}">
-      {% if block.settings.trigger_link_title != blank %}
-        {{ block.settings.trigger_link_title }}
-      {% endif %}
-      {% if block.settings.trigger_link_image.src != blank %}
-        <img
-          class="img-fluid"
-          src="{{ block.settings.trigger_link_image.src | image_url: width: img_width, height: img_height }}"
-          alt="{{ block.settings.trigger_link_image.alt | escape }}"
-          width="{{ img_width }}"
-          height="{{ img_height }}"
-          loading="lazy">
-      {% endif %}
-    </a>
-  {% endif %}
-
-
-  <!-- Modal -->
-  <div
-    class="modal fade"
-    id="modal-{{ section.id }}-{{ forloop.index }}"
-    tabindex="-1"
-    aria-labelledby="modal-{{ section.id }}-{{ forloop.index }}"
-    aria-hidden="true">
-    <div class="{{section.settings.modal_size}} modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          {% if block.settings.modal_header_title != blank %}
-            <h5 class="modal-title">{{ block.settings.modal_header_title }}</h5>
-          {% endif %}
+        <!-- Button trigger modal -->
+        {% if block.settings.modal_trigger_type == 'modal_trigger_button' and block.settings.trigger_button_title != blank %}
           <button
             type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-
-          {% if block.settings.modal_title != blank %}
-            <h3 class="title mb-3 {{ block.settings.title_size }}">
-              {{ block.settings.modal_title }}
-            </h3>
-          {% endif %}
-
-          {% if block.settings.modal_body_content != blank %}
-            <div class="description rte mb-6">
-              {{ block.settings.modal_body_content }}
-            </div>
-          {% endif %}
-
-          {% if block.settings.modal_content_image %}
-            <div class="modal-content__image text-center">
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#modal-{{ section.id }}-{{ forloop.index }}">
+            {{ block.settings.trigger_button_title }}
+          </button>
+        {% elsif block.settings.modal_trigger_type == 'modal_trigger_link' %}
+          <a
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#modal-{{ section.id }}-{{ forloop.index }}"
+            title="{{ block.settings.title }}">
+            {% if block.settings.trigger_link_title != blank %}
+              {{ block.settings.trigger_link_title }}
+            {% endif %}
+            {% if block.settings.trigger_link_image.src != blank %}
               <img
-                class="img-fluid"
-                src="{{ block.settings.modal_content_image | image_url: width: 600, height: 480 }}"
-                alt="{{ block.settings.modal_content_image.alt | escape }}"
-                width="600"
-                height="480"
+                class="modal__trigger-image img-fluid"
+                src="{{ block.settings.trigger_link_image.src | image_url: width: img_width, height: img_height }}"
+                alt="{{ block.settings.trigger_link_image.alt | escape }}"
+                width="{{ img_width }}"
+                height="{{ img_height }}"
                 loading="lazy">
-            </div>
-          {% endif %}
+            {% endif %}
+          </a>
+        {% endif %}
 
-          {% if block.settings.modal_link_url and block.settings.modal_link_text %}
-            <div class="modal-footer">
-              <a class="modal-content__link my-3{% if block.settings.modal_link_button == true %} btn btn-primary{% endif %}" href="{{ block.settings.modal_link_url }}">
-                {{ block.settings.modal_link_text }}
-              </a>
-            </div>
-          {% endif %}
 
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="modal-{{ section.id }}-{{ forloop.index }}"
+          tabindex="-1"
+          aria-labelledby="modal-{{ section.id }}-{{ forloop.index }}"
+          aria-hidden="true">
+          <div class="{{section.settings.modal_size}} modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                {% if block.settings.modal_header_title != blank %}
+                  <h5 class="modal-title">{{ block.settings.modal_header_title }}</h5>
+                {% endif %}
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+
+                {% if block.settings.modal_title != blank %}
+                  <h3 class="title mb-3 {{ block.settings.title_size }}">
+                    {{ block.settings.modal_title }}
+                  </h3>
+                {% endif %}
+
+                {% if block.settings.modal_body_content != blank %}
+                  <div class="description rte mb-6">
+                    {{ block.settings.modal_body_content }}
+                  </div>
+                {% endif %}
+
+                {% if block.settings.modal_content_image %}
+                  <div class="modal-content__image text-center">
+                    <img
+                      class="img-fluid"
+                      src="{{ block.settings.modal_content_image | image_url: width: 600, height: 480 }}"
+                      alt="{{ block.settings.modal_content_image.alt | escape }}"
+                      width="600"
+                      height="480"
+                      loading="lazy">
+                  </div>
+                {% endif %}
+
+                {% if block.settings.modal_link_url and block.settings.modal_link_text %}
+                  <div class="modal-footer">
+                    <a class="modal-content__link my-3{% if block.settings.modal_link_button == true %} btn btn-primary{% endif %}" href="{{ block.settings.modal_link_url }}">
+                      {{ block.settings.modal_link_text }}
+                    </a>
+                  </div>
+                {% endif %}
+
+              </div>
+
+            </div>
+          </div>
         </div>
 
       </div>
-    </div>
-  </div>
-{% endfor %}
 
+    {% endfor %}
+
+  </div>
+</div>
 
 {% schema %}
   {
@@ -146,6 +158,41 @@
             "value": "modal-dialog modal-xl"
           }
         ]
+      },
+      {
+        "type": "header",
+        "content": "Items per Row",
+        "info": "Based on screen resolution."
+      },
+      {
+        "type": "range",
+        "id": "row_xs",
+        "label": "Mobile",
+        "info": "up to 575px",
+        "min": 1,
+        "max": 3,
+        "step": 1,
+        "default": 1
+      },
+      {
+        "type": "range",
+        "id": "row_sm",
+        "label": "Tablet",
+        "info": "576px - 991px",
+        "min": 1,
+        "max": 4,
+        "step": 1,
+        "default": 2
+      },
+      {
+        "type": "range",
+        "id": "row_lg",
+        "label": "Desktop",
+        "info": "992px and up",
+        "min": 1,
+        "max": 6,
+        "step": 1,
+        "default": 4
       }
     ],
     "blocks": [
