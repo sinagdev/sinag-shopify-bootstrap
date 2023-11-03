@@ -1,7 +1,8 @@
 <div class="container">
   <div class="d-flex {{ section.settings.tab_orientation }}">
+
     <ul
-      class="nav nav-pills{% capture tabClasses %}{% if section.settings.tab_orientation == 'flex-row' %} flex-column me-3 col{% endif %}{% endcapture %} {{ tabClasses }}"
+      class="nav nav-pills mb-3{{ section.settings.tab_orientation == 'flex-row' | assign: 'flex-column' }}"
       id="pills-tab"
       role="tablist">
 
@@ -22,8 +23,7 @@
       {% endfor %}
     </ul>
 
-    <div class="tab-content{% if section.settings.tab_orientation == 'flex-column' %} col-lg-10{% endif %}" id="pills-tabContent">
-
+    <div class="tab-content" id="pills-tabContent">
       {% for block in section.blocks %}
         <div
           class="tab-pane fade{% if forloop.index == 1 %} show active{% endif %}"
