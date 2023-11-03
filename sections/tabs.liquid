@@ -1,38 +1,26 @@
 <div class="container">
   <div class="row">
-
-      {% if block.settings.tab_nav_pill_title != blank %}
-        <ul
-          class="nav nav-pills mb-3"
-          id="pills-tab"
-          role="tablist">
-          {% for block in section.blocks %}
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link active"
-              id="pills-home-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#tab-{{ section.id }}-{{ forloop.index }}"
-              type="button"
-              role="tab"
-              aria-controls="{{ section.title }}-{{ block.title }}"
-              aria-selected="true">
-              {{ block.settings.tab_nav_pill_title }}
-            </button>
-          </li>
-        {% endfor %}
-        </ul>
-      {% endif %}
-
-      
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
       {% for block in section.blocks %}
-      <div class="tab-content" id="pills-tabContent">
-        <div
-          class="tab-pane fade show active"
-          id="tab-{{ section.id }}-{{ forloop.index }}"
-          role="tabpanel"
-          aria-labelledby="{{ section.title }}-{{ block.title }}">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link{% if forloop.index == 1 %} active{% endif %}"
+            id="pills-{{ section.id }}-{{ forloop.index }}-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#tab-{{ section.id }}-{{ forloop.index }}"
+            type="button"
+            role="tab"
+            aria-controls="{{ section.title }}-{{ block.title }}"
+            aria-selected="{% if forloop.index == 1 %}true{% else %}false{% endif %}">
+            {{ block.settings.tab_nav_pill_title }}
+          </button>
+        </li>
+      {% endfor %}
+    </ul>
 
+    <div class="tab-content" id="pills-tabContent">
+      {% for block in section.blocks %}
+        <div class="tab-pane fade{% if forloop.index == 1 %} show active{% endif %}" id="tab-{{ section.id }}-{{ forloop.index }}" role="tabpanel" aria-labelledby="pills-{{ section.id }}-{{ forloop.index }}-tab">
           {% if block.settings.tab_content_title != blank %}
             <div class="tab-content__title">
               {{ block.settings.tab_content_title }}
@@ -44,12 +32,12 @@
               {{ block.settings.tab_content_body }}
             </div>
           {% endif %}
-
         </div>
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
 </div>
+
 
 {% schema %}
   {
