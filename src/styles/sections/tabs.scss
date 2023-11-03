@@ -4,18 +4,21 @@
   &--horizontal {
     flex-direction: column;
 
-    .nav-pills{
-        margin-bottom: 1.5rem;
+    .nav-pills {
+      margin-bottom: 1.5rem;
     }
-
   }
 
   &--vertical {
-    flex-direction: row;
+    flex-direction: column;
 
-    .nav-pills{
-        flex-direction: column;
-        margin-right: 1.5rem;
+    .nav-pills {
+      flex-direction: column;
+      margin-right: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      flex-direction: row;
     }
   }
 
@@ -23,9 +26,16 @@
     min-width: 130px;
   }
 
-  .tab-content{
-    &__title{
-        margin-bottom: 1rem;
+  .tab-content {
+    &__title {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__nav-container {
+    width: 100%;
+    @media (max-width: 768px) {
+      margin: 2rem auto;
     }
   }
 }

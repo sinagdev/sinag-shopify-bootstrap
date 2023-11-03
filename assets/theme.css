@@ -897,15 +897,28 @@ a:hover .product-item-img {
   margin-bottom: 1.5rem;
 }
 .tabs--vertical {
-  flex-direction: row;
+  flex-direction: column;
 }
 .tabs--vertical .nav-pills {
   flex-direction: column;
   margin-right: 1.5rem;
+}
+@media (min-width: 768px) {
+  .tabs--vertical {
+    flex-direction: row;
+  }
 }
 .tabs .nav-pills {
   min-width: 130px;
 }
 .tabs .tab-content__title {
   margin-bottom: 1rem;
+}
+.tabs__nav-container {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .tabs__nav-container {
+    margin: 2rem auto;
+  }
 }

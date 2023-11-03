@@ -89,6 +89,16 @@ eval("function _typeof(o) { \"@babel/helpers - typeof\"; return _typeof = \"func
 
 /***/ }),
 
+/***/ "./src/scripts/sections/tabs.js":
+/*!**************************************!*\
+  !*** ./src/scripts/sections/tabs.js ***!
+  \**************************************/
+/***/ (() => {
+
+eval("document.addEventListener('DOMContentLoaded', function () {\n  var tabSelects = document.querySelectorAll('.tabs__select');\n  var tabContents = document.querySelectorAll('.tabs__content');\n  tabSelects.forEach(function (select) {\n    select.addEventListener('change', function () {\n      var selectedTabId = select.value;\n      var tabContent = document.querySelector(selectedTabId);\n      tabContents.forEach(function (content) {\n        content.classList.remove('show', 'active');\n      });\n      tabContent.classList.add('show', 'active');\n    });\n  });\n});\n\n//# sourceURL=webpack:///./src/scripts/sections/tabs.js?");
+
+/***/ }),
+
 /***/ "./src/theme.js":
 /*!**********************!*\
   !*** ./src/theme.js ***!
@@ -117,7 +127,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \*********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./global/base.js\": \"./src/scripts/global/base.js\",\n\t\"./global/custom.js\": \"./src/scripts/global/custom.js\",\n\t\"./global/general.js\": \"./src/scripts/global/general.js\",\n\t\"./global/search.js\": \"./src/scripts/global/search.js\",\n\t\"./global/sections.js\": \"./src/scripts/global/sections.js\",\n\t\"./sections/cart.js\": \"./src/scripts/sections/cart.js\",\n\t\"./sections/collection.js\": \"./src/scripts/sections/collection.js\",\n\t\"./sections/product.js\": \"./src/scripts/sections/product.js\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/scripts sync recursive \\\\.js$\";\n\n//# sourceURL=webpack:///./src/scripts/_sync_\\.js$?");
+eval("var map = {\n\t\"./global/base.js\": \"./src/scripts/global/base.js\",\n\t\"./global/custom.js\": \"./src/scripts/global/custom.js\",\n\t\"./global/general.js\": \"./src/scripts/global/general.js\",\n\t\"./global/search.js\": \"./src/scripts/global/search.js\",\n\t\"./global/sections.js\": \"./src/scripts/global/sections.js\",\n\t\"./sections/cart.js\": \"./src/scripts/sections/cart.js\",\n\t\"./sections/collection.js\": \"./src/scripts/sections/collection.js\",\n\t\"./sections/product.js\": \"./src/scripts/sections/product.js\",\n\t\"./sections/tabs.js\": \"./src/scripts/sections/tabs.js\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/scripts sync recursive \\\\.js$\";\n\n//# sourceURL=webpack:///./src/scripts/_sync_\\.js$?");
 
 /***/ })
 
