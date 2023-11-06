@@ -573,8 +573,8 @@
       ],
       "settings": {
         "tab_orientation": "horizontal",
-        "pt": 3,
-        "pb": 3
+        "pt": 6,
+        "pb": 6
       }
     }
   },
