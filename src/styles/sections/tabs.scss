@@ -47,15 +47,15 @@
     .dropdown-toggle {
       flex-grow: 1;
       text-align: left;
-      br{
+      br {
         display: none;
       }
     }
     .dropdown-toggle::after {
       position: absolute;
-      top: 50%; 
-      right: 15px; 
-      transform: translateY(-50%); 
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%);
     }
     .dropdown-menu {
       width: 100%;
