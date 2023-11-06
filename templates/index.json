@@ -524,6 +524,52 @@
         "mt": 0,
         "mb": 0
       }
+    },
+    "46608c0f-c1e7-4a23-b13c-a09cffec4ade": {
+      "type": "tabs",
+      "blocks": {
+        "template--16193952514198__46608c0f-c1e7-4a23-b13c-a09cffec4ade-item-1": {
+          "type": "item",
+          "settings": {
+            "tab_nav_pill_title": "Tab Button 1",
+            "tab_content_title": "Tab Content Title 1",
+            "tab_content_body": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, parturient nascetur fringilla auctor dis donec morbi, natoque porta justo est aptent orci. Facilisis sociis luctus ante elementum nisi tempor hac turpis proin himenaeos, quam eleifend cras netus nunc mattis cubilia pharetra natoque, sed consequat aliquam molestie scelerisque augue mi lacus sagittis. Erat aptent mauris primis facilisis tristique nunc eu tellus aliquet congue nisi phasellus, platea ultricies metus taciti iaculis himenaeos arcu dignissim curabitur praesent eget suspendisse, turpis class et pulvinar molestie viverra facilisi curae nullam accumsan conubia. Orci duis ultrices dapibus natoque fringilla condimentum in nullam, quis odio urna felis dignissim dictumst. Imperdiet interdum habitasse hendrerit tellus venenatis eu condimentum nascetur proin libero, fringilla in euismod egestas mattis montes facilisi neque purus. Arcu sociosqu urna et nascetur cras praesent felis ornare cum massa montes, curabitur vehicula facilisi augue vulputate sagittis aptent velit venenatis. Himenaeos vitae eleifend cras non sed blandit diam ligula integer dui, scelerisque tempor eget gravida cursus dictum mattis imperdiet felis quisque, mauris iaculis ornare sapien nulla sagittis lacinia commodo varius. Habitant justo enim semper posuere egestas tristique cum fames, gravida quam luctus congue nibh cubilia eget tortor, magna facilisi urna netus pretium mus quis.<\/p>",
+            "tab_link_text": "Tab Link",
+            "tab_link_url": "",
+            "tab_link_button": false
+          }
+        },
+        "61fb9d40-5129-4933-8a63-08ce7cca4885": {
+          "type": "item",
+          "settings": {
+            "tab_nav_pill_title": "Tab Button 2",
+            "tab_content_title": "Tab Content Title 2",
+            "tab_content_body": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, parturient nascetur fringilla auctor dis donec morbi, natoque porta justo est aptent orci. Facilisis sociis luctus ante elementum nisi tempor hac turpis proin himenaeos, quam eleifend cras netus nunc mattis cubilia pharetra natoque, sed consequat aliquam molestie scelerisque augue mi lacus sagittis. Erat aptent mauris primis facilisis tristique nunc eu tellus aliquet congue nisi phasellus, platea ultricies metus taciti iaculis himenaeos arcu dignissim curabitur praesent eget suspendisse, turpis class et pulvinar molestie viverra facilisi curae nullam accumsan conubia. Orci duis ultrices dapibus natoque fringilla condimentum in nullam, quis odio urna felis dignissim dictumst. Imperdiet interdum habitasse hendrerit tellus venenatis eu condimentum nascetur proin libero, fringilla in euismod egestas mattis montes facilisi neque purus. Arcu sociosqu urna et nascetur cras praesent felis ornare cum massa montes, curabitur vehicula facilisi augue vulputate sagittis aptent velit venenatis. Himenaeos vitae eleifend cras non sed blandit diam ligula integer dui, scelerisque tempor eget gravida cursus dictum mattis imperdiet felis quisque, mauris iaculis ornare sapien nulla sagittis lacinia commodo varius. Habitant justo enim semper posuere egestas tristique cum fames, gravida quam luctus congue nibh cubilia eget tortor, magna facilisi urna netus pretium mus quis.<\/p>",
+            "tab_link_text": "Tab Link",
+            "tab_link_url": "",
+            "tab_link_button": false
+          }
+        },
+        "41e329ac-eaac-4d1f-8619-bacb1d5393fe": {
+          "type": "item",
+          "settings": {
+            "tab_nav_pill_title": "Tab Button 3",
+            "tab_content_title": "Tab Content Title 3",
+            "tab_content_body": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, parturient nascetur fringilla auctor dis donec morbi, natoque porta justo est aptent orci. Facilisis sociis luctus ante elementum nisi tempor hac turpis proin himenaeos, quam eleifend cras netus nunc mattis cubilia pharetra natoque, sed consequat aliquam molestie scelerisque augue mi lacus sagittis. Erat aptent mauris primis facilisis tristique nunc eu tellus aliquet congue nisi phasellus, platea ultricies metus taciti iaculis himenaeos arcu dignissim curabitur praesent eget suspendisse, turpis class et pulvinar molestie viverra facilisi curae nullam accumsan conubia. Orci duis ultrices dapibus natoque fringilla condimentum in nullam, quis odio urna felis dignissim dictumst. Imperdiet interdum habitasse hendrerit tellus venenatis eu condimentum nascetur proin libero, fringilla in euismod egestas mattis montes facilisi neque purus. Arcu sociosqu urna et nascetur cras praesent felis ornare cum massa montes, curabitur vehicula facilisi augue vulputate sagittis aptent velit venenatis. Himenaeos vitae eleifend cras non sed blandit diam ligula integer dui, scelerisque tempor eget gravida cursus dictum mattis imperdiet felis quisque, mauris iaculis ornare sapien nulla sagittis lacinia commodo varius. Habitant justo enim semper posuere egestas tristique cum fames, gravida quam luctus congue nibh cubilia eget tortor, magna facilisi urna netus pretium mus quis.<\/p>",
+            "tab_link_text": "Tab Link",
+            "tab_link_url": "",
+            "tab_link_button": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16193952514198__46608c0f-c1e7-4a23-b13c-a09cffec4ade-item-1",
+        "61fb9d40-5129-4933-8a63-08ce7cca4885",
+        "41e329ac-eaac-4d1f-8619-bacb1d5393fe"
+      ],
+      "settings": {
+        "tab_orientation": "horizontal"
+      }
     }
   },
   "order": [
@@ -538,6 +584,7 @@
     "165175524396f2667c",
     "c74ebbe2-8be5-4594-80c9-25bb5250e03b",
     "16517348541d37c171",
-    "1ab6c22f-7e79-4e79-b4b5-e0939ba5593b"
+    "1ab6c22f-7e79-4e79-b4b5-e0939ba5593b",
+    "46608c0f-c1e7-4a23-b13c-a09cffec4ade"
   ]
 }
