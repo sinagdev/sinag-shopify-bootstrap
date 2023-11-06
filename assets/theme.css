@@ -922,3 +922,26 @@ a:hover .product-item-img {
     margin: 2rem auto;
   }
 }
+.tabs__dropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.tabs__dropdown .dropdown-toggle {
+  flex-grow: 1;
+  text-align: left;
+}
+.tabs__dropdown .dropdown-toggle br {
+  display: none;
+}
+.tabs__dropdown .dropdown-toggle::after {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+.tabs__dropdown .dropdown-menu {
+  width: 100%;
+  left: 0;
+}
