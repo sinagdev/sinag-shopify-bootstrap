@@ -7,7 +7,7 @@
       </button>
       <ul class="dropdown-menu" aria-labelledby="customDropdownMenu-{{ section.id }}">
         {% for block in section.blocks %}
-          <li class="dropdown-item" data-toggle="custom-tab" data-target="tab-{{ section.id }}-{{ forloop.index }}">
+          <li class="dropdown-item" data-toggle="custom-tab" data-target="#tab-{{ section.id }}-{{ forloop.index }}">
             {{ block.settings.tab_nav_pill_title }}
           </li>
         {% endfor %}
@@ -26,7 +26,7 @@
 
     <div class="tab-content" id="pills-tabContent-{{ section.id }}">
       {% for block in section.blocks %}
-        <div class="tab-pane fade{% if forloop.index == 1 %} show active{% endif %}" id="tab-{{ section.id }}-{{ forloop.index }}" role="tabpanel" aria-labelledby="pills-{{ section.id }}-{{ forloop.index }}-tab">
+        <div class="tab-pane{% if forloop.index == 1 %} show active{% endif %}" id="tab-{{ section.id }}-{{ forloop.index }}" role="tabpanel" aria-labelledby="pills-{{ section.id }}-{{ forloop.index }}-tab">
           {% if block.settings.tab_content_title != blank %}
             <h5 class="tab-content__title">
               {{ block.settings.tab_content_title }}
@@ -43,9 +43,6 @@
     </div>
   </div>
 </div>
-
-
-
 
 {% schema %}
   {
