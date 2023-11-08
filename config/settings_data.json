@@ -7,6 +7,7 @@
     "font_headings": "roboto_n5",
     "font_body": "sans-serif",
     "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "cart_drawer_show_cart_link": false,
     "social_facebook": "#",
     "social_twitter": "#",
     "social_instagram": "#",
@@ -38,7 +39,8 @@
         "settings": {
           "bg_color": "bg-white text-dark",
           "shadow": "shadow-sm",
-          "menu_desktop": "",
+          "menu_desktop": "main-menu",
+          "logo": "shopify:\/\/shop_images\/favicon.png",
           "logo_height_mobile": 40,
           "logo_height_desktop": 40,
           "offcanvas_menu_header_bg": "bg-dark text-white",
