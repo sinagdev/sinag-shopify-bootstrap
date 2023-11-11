@@ -1,6 +1,10 @@
 // CSS
 import './styles/theme.scss'
 
+// AOS Init
+import AOS from 'aos'
+AOS.init()
+
 // JS
 function importAll (r) {
     r.keys().forEach(r)
